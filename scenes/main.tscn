@@ -1,66 +1,46 @@
-[gd_scene load_steps=10 format=4 uid="uid://b8w6vgx1o8ing"]
+[gd_scene load_steps=4 format=3 uid="uid://b8w6vgx1o8ing"]
 
-[ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_sugp2"]
-[ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="3_muem4"]
-[ext_resource type="TileSet" uid="uid://c7qgwmt386soi" path="res://main.tres" id="3_tefeu"]
-[ext_resource type="PackedScene" uid="uid://bqrh5u2recb8r" path="res://scenes/ui.tscn" id="8_tipki"]
-[ext_resource type="Script" uid="uid://cg40brlg5c61i" path="res://scripts/ui.gd" id="9_85g3d"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
-frequency = 0.0075
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_dp3eg"]
-width = 320
-height = 180
-seamless = true
-seamless_blend_skirt = 0.75
-noise = SubResource("FastNoiseLite_muem4")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_muem4"]
-shader = ExtResource("3_muem4")
-shader_parameter/noise_texture = SubResource("NoiseTexture2D_dp3eg")
-shader_parameter/density = 0.25
-shader_parameter/speed = Vector2(0.03, 0.02)
+[ext_resource type="Script" uid="uid://baayf0p2fww3u" path="res://scripts/control.gd" id="1_o6xl0"]
+[ext_resource type="Script" uid="uid://bfea1tn5gv84r" path="res://scripts/playbutton.gd" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://csf5qh54jkdqw" path="res://assets/mainmenu.png" id="3_sugp2"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_0wfyh")]
-position = Vector2(14, 43)
-collision_layer = 2
-script = ExtResource("2_sugp2")
+[node name="MenuRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2799.0
+offset_bottom = 1494.0
+script = ExtResource("1_o6xl0")
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(1, -5)
-zoom = Vector2(4, 4)
-limit_bottom = 150
-position_smoothing_enabled = true
-position_smoothing_speed = 1.0
+[node name="MainMenu" type="Control" parent="MenuRoot"]
+layout_mode = 1
+anchor_left = 0.031
+anchor_top = 0.026
+anchor_right = 0.031
+anchor_bottom = 0.026
+offset_left = -39.769
+offset_top = -10.844
+offset_right = 1212.23
+offset_bottom = 661.156
 
-[node name="MainMap" type="TileMapLayer" parent="."]
-position = Vector2(-6, 1)
-tile_map_data = PackedByteArray("AAAAAAQABgACAAMAAAABAAQABgADAAUAAAACAAQABgAEAAUAAAAAAAMABgADAAAAAAABAAMABgADAAAAAAACAAMABgAEAAAAAAAFAAUABgADAAAAAAAGAAUABgADAAAAAAAHAAUABgADAAAAAAAEAP//BgACAAIAAAAFAP//BgADAAIAAAAGAP//BgAEAAIAAAAHAP//BgADAAAAAAADAP//BgADAAAAAAAEAP7/BgAIAAAAAAAFAP7/BgADAAAAAAAGAP7/BgAKAAAAAAADAAAABgACAAMAAAACAAAABgABAAMAAAAEAAAABgACAAMAAAAFAAAABgACAAMAAAAGAAAABgACAAMAAAAHAAAABgACAAIAAAAGAAEABgAFAAMAAAAFAAEABgAEAAMAAAAEAAEABgABAAMAAAAFAAQABgANAAAAAAAHAAQABgANAAAAAAAGAAQABgAOAAAAAAABAAUABgADAAMAAAACAAUABgAEAAQAAAD//wMABgAGAAEAAAD//wQABgABAAMAAAAAAAUABgABAAMAAAALAAQABgAGAAEAAAAOAAQABgADAAAAAAAMAAIABgAJAAQAAAAOAAIABgALAAQAAAANAAEABgAKAAMAAAAOAAEABgALAAMAAAAMAAQABgADAAAAAAANAAQABgADAAAAAAAMAAUABgADAAEAAAANAAUABgACAAMAAAALAAUABgABAAMAAAACAP//BgAGAAEAAAAFAAYABgAEAAIAAAAGAAYABgAEAAIAAAAEAAYABgABAAMAAAAHAAYABgAEAA4AAAAEAAUABgABAAEAAAAIAAUABgAFAAEAAAAMAAMABgAJAAUAAAAPAAEABgAMAAMAAAAPAAIABgAMAAQAAAAPAAMABgAMAAUAAAAPAAQABgAFAAEAAAAOAAUABgACAAMAAAAPAAUABgAFAAMAAAAIAP//BgAMAAEAAAAIAAAABgAFAAMAAAAMAAEABgAJAAMAAAANAAMABgANAAIAAAAHAP7/BgAPAAIAAAAFAP3/BgAOAAAAAAAAAAIABgAOAAAAAAACAAIABgAOAAEAAAA2AP3/BgAPAAwAAAAFAAcABgADAAMAAAAGAAcABgAEAAMAAAAFAAgABgADAAMAAAAGAAgABgAEAAMAAAAFAAkABgADAAMAAAAGAAkABgAEAAMAAAAFAAoABgADAAMAAAAGAAoABgAEAAMAAAAFAAsABgADAAMAAAAGAAsABgAEAAMAAAA=")
-tile_set = ExtResource("3_tefeu")
+[node name="Playbutton" type="Button" parent="MenuRoot/MainMenu"]
+top_level = true
+light_mask = 2
+visibility_layer = 2
+layout_mode = 0
+offset_left = 172.0
+offset_top = 237.0
+offset_right = 550.0
+offset_bottom = 494.0
+text = "Level 1
+"
+script = ExtResource("2_0wfyh")
 
-[node name="UI" parent="." instance=ExtResource("8_tipki")]
-script = ExtResource("9_85g3d")
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-layer = 11
-scroll_ignore_camera_zoom = true
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
-material = SubResource("ShaderMaterial_muem4")
-offset_left = -2440.0
-offset_top = -1370.0
-offset_right = 2770.0
-offset_bottom = 1825.0
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.34, 0.34, 0.34, 1)
-
-[node name="labels" type="Node" parent="."]
-
-[node name="torches" type="Node" parent="."]
+[node name="TextureRect" type="TextureRect" parent="MenuRoot/MainMenu"]
+layout_mode = 0
+offset_left = -51.84
+offset_top = -25.892
+offset_right = 1238.16
+offset_bottom = 694.108
+texture = ExtResource("3_sugp2")

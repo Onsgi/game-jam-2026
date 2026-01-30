@@ -14,6 +14,11 @@ config/name="Game jam 2016"
 run/main_scene="uid://b8w6vgx1o8ing"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [input]
 
 jump={
