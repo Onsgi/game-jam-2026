@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://c3s1r3iiojqy0"]
+
+[ext_resource type="Script" uid="uid://syubqaepvp42" path="res://scripts/scout.gd" id="1_5iy45"]
+[ext_resource type="Texture2D" uid="uid://bfyk3u4idwo8g" path="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk scout/LizardfolkScout.png" id="1_7hcjh"]
+[ext_resource type="FontFile" uid="uid://qwthqiuxkqy" path="res://assets/brackeys/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_5iy45"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("1_7hcjh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("1_7hcjh")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("1_7hcjh")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("1_7hcjh")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yc10j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hcjh"]
+size = Vector2(16, 121)
+
+[node name="Area2D" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_5iy45")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yc10j")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -50.5)
+shape = SubResource("RectangleShape2D_7hcjh")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -70.0
+offset_top = -42.0
+offset_right = 86.0
+offset_bottom = -12.0
+theme_override_fonts/font = ExtResource("2_5iy45")
+theme_override_font_sizes/font_size = 8
+text = "Are you the subordinate
+of the black knight?
+Don't try anything funny!"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
