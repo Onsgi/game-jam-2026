@@ -53,10 +53,10 @@ scroll_ignore_camera_zoom = true
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
 material = SubResource("ShaderMaterial_muem4")
-offset_left = -94.0
-offset_top = -215.0
-offset_right = 3106.0
-offset_bottom = 785.0
+offset_left = -2440.0
+offset_top = -1370.0
+offset_right = 2770.0
+offset_bottom = 1825.0
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.34, 0.34, 0.34, 1)
