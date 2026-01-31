@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://ctjp7vwnkc18m"]
 
-[ext_resource type="Texture2D" uid="uid://c0pajubiclsfr" path="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling bard/HalflingBard.png" id="1_0yg1o"]
+[ext_resource type="Texture2D" uid="uid://c0pajubiclsfr" path="res://Assets/halfling bard/HalflingBard.png" id="1_0yg1o"]
 [ext_resource type="Script" uid="uid://c8s054ts0yntd" path="res://scripts/bard.gd" id="1_nprmb"]
 [ext_resource type="FontFile" uid="uid://qwthqiuxkqy" path="res://Assets/brackeys/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_nprmb"]
 
@@ -52,10 +52,10 @@ sprite_frames = SubResource("SpriteFrames_0ld40")
 autoplay = "default"
 
 [node name="Label" type="Label" parent="."]
-offset_left = -72.0
-offset_top = -54.0
-offset_right = 84.0
-offset_bottom = -13.0
+offset_left = -48.0
+offset_top = -53.0
+offset_right = 108.0
+offset_bottom = -12.0
 theme_override_fonts/font = ExtResource("2_nprmb")
 theme_override_font_sizes/font_size = 8
 
