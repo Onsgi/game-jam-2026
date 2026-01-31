@@ -1,9 +1,12 @@
 extends CanvasLayer
 
-@onready var scoreLabel: Label = $Score
-@onready var high_score: Label = $HighScore
+@onready var scoreLabel: Label = $Hud/VBoxContainer/Score
+@onready var high_score: Label = $Hud/VBoxContainer/HighScore
 
 var score = 0
+var lives = 3
+var coins = 0
+var highscore = 0
 
 func _ready() -> void:
 	var old_score = load_from_file()
@@ -15,6 +18,8 @@ func add_coin_to_score():
 	scoreLabel.text = "Coins: " + str(score) + "/24"
 	
 func set_high_score(new_score: int):
+	if (new_score == null):
+		new_score = 0
 	high_score.text = "\nHigh score: " + str(new_score)
 
 func save_to_file():

@@ -1,17 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqrh5u2recb8r"]
+[gd_scene load_steps=4 format=3 uid="uid://bqrh5u2recb8r"]
 
 [ext_resource type="FontFile" uid="uid://qwthqiuxkqy" path="res://Assets/brackeys/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="1_nt7q6"]
 [ext_resource type="Script" uid="uid://d1vc0rbba52mp" path="res://scripts/hud.gd" id="1_x4jx1"]
 [ext_resource type="PackedScene" uid="uid://gcw821k02s6b" path="res://scenes/pause.tscn" id="3_yev5y"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_yev5y"]
-font_size = 400
-
-[sub_resource type="LabelSettings" id="LabelSettings_gdt2y"]
-font_size = 400
-
-[sub_resource type="LabelSettings" id="LabelSettings_wm3ai"]
-font_size = 400
 
 [node name="UI" type="CanvasLayer"]
 layer = 12
@@ -27,14 +18,13 @@ script = ExtResource("1_x4jx1")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(0.05, 0.05)
 
 [node name="Score" type="Label" parent="Hud/VBoxContainer"]
 z_index = 10
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_nt7q6")
 theme_override_font_sizes/font_size = 16
-label_settings = SubResource("LabelSettings_yev5y")
+text = "Coins: 0/24"
 
 [node name="HighScore" type="Label" parent="Hud/VBoxContainer"]
 layout_mode = 2
@@ -42,14 +32,6 @@ theme_override_fonts/font = ExtResource("1_nt7q6")
 theme_override_font_sizes/font_size = 16
 text = "
 High Score: "
-label_settings = SubResource("LabelSettings_gdt2y")
-
-[node name="Coins" type="Label" parent="Hud/VBoxContainer"]
-layout_mode = 2
-label_settings = SubResource("LabelSettings_wm3ai")
-
-[node name="Health" type="HBoxContainer" parent="Hud/VBoxContainer"]
-layout_mode = 2
 
 [node name="Pause" parent="." instance=ExtResource("3_yev5y")]
 visible = false

@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=3 uid="uid://gcw821k02s6b"]
+
+[ext_resource type="Script" uid="uid://bc1x6cv8f0ihu" path="res://scripts/pause.gd" id="1_f1d2v"]
+
+[sub_resource type="Theme" id="Theme_f1d2v"]
+
+[node name="Pause" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f1d2v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(1, 1, 1, 0.517647)
+
+[node name="CenterContainer" type="CenterContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -113.0
+offset_right = 35.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_f1d2v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game Paused"
+
+[node name="ResumeButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="Master" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Master"
+horizontal_alignment = 1
+
+[node name="VolumeSlider" type="HSlider" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="Sfx" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sfx"
+horizontal_alignment = 1
+
+[node name="SfxSlider" type="HSlider" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="Music" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music"
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="HighScore" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="value_changed" from="ColorRect/CenterContainer/VBoxContainer/VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="value_changed" from="ColorRect/CenterContainer/VBoxContainer/SfxSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="ColorRect/CenterContainer/VBoxContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
