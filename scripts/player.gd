@@ -17,9 +17,9 @@ var jumps_left := 2
 @onready var dash: AudioStreamPlayer2D = $Dash
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var death: AudioStreamPlayer2D = $Death
-@export var fire_frames: SpriteFrames
-@export var golden_frames: SpriteFrames
-@export var jumping_frames: SpriteFrames
+@export var fire_frames: SpriteFrames = preload("res://frames/fire.tres")
+@export var golden_frames: SpriteFrames = preload("res://frames/golden.tres")
+@export var jumping_frames: SpriteFrames = preload("res://frames/jumping.tres")
 @onready var current_skin: AnimatedSprite2D = $Skin
 
 @export var enable_double_jump := true
@@ -27,10 +27,26 @@ var jumps_left := 2
 var heal_timer = 0.0
 
 func _ready():
-
 	add_to_group("player")
 	if Game_config.has_checkpoint and Game_config.last_checkpoint_scene == get_tree().current_scene.scene_file_path:
 		global_position = Game_config.last_checkpoint_position
+	
+	# Restore saved skin
+	switch_skin(Game_config.current_skin)
+
+# ... (omitting intermediate code for brevity if not modifying, but here I need to update switch_skin)
+
+func switch_skin(new_skin: String):
+	Game_config.current_skin = new_skin
+	match new_skin:
+		"fire":
+			current_skin.sprite_frames = fire_frames
+		"golden":
+			current_skin.sprite_frames = golden_frames
+		"jumping":
+			current_skin.sprite_frames = jumping_frames
+
+	current_skin.play("idle")
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
@@ -165,14 +181,3 @@ func shoot_fireball() -> void:
 	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
 	fb.direction = facing
 	get_tree().current_scene.add_child(fb)
-
-func switch_skin(new_skin: String):
-	match new_skin:
-		"fire":
-			current_skin.sprite_frames = fire_frames
-		"golden":
-			current_skin.sprite_frames = golden_frames
-		"jumping":
-			current_skin.sprite_frames = jumping_frames
-
-	current_skin.play("idle")
