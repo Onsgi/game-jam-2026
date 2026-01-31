@@ -1,13 +1,13 @@
 [gd_scene load_steps=19 format=3 uid="uid://i4cmyxsbih01"]
 
-[ext_resource type="Texture2D" uid="uid://bpafwn13fjpj0" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/groundtorch3.png" id="1_21l5o"]
-[ext_resource type="Texture2D" uid="uid://shs52ofjrmmd" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-2.png" id="2_wjrvc"]
-[ext_resource type="Texture2D" uid="uid://ckore1nkja33l" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-3.png" id="3_2bkw1"]
-[ext_resource type="Texture2D" uid="uid://bsgbjincrfifu" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-4.png" id="4_etrdt"]
-[ext_resource type="Texture2D" uid="uid://c2qokdjt1omeo" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-5.png" id="5_x1r1x"]
-[ext_resource type="Texture2D" uid="uid://d15yuefj0g2yd" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-6.png" id="6_o1df0"]
-[ext_resource type="Texture2D" uid="uid://dcd3of1ds04sa" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-7.png" id="7_e6wph"]
-[ext_resource type="Texture2D" uid="uid://c6aod6cmqf1kc" path="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-8.png" id="8_if6sk"]
+[ext_resource type="Texture2D" uid="uid://bpafwn13fjpj0" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/groundtorch3.png" id="1_21l5o"]
+[ext_resource type="Texture2D" uid="uid://shs52ofjrmmd" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-2.png" id="2_wjrvc"]
+[ext_resource type="Texture2D" uid="uid://ckore1nkja33l" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-3.png" id="3_2bkw1"]
+[ext_resource type="Texture2D" uid="uid://bsgbjincrfifu" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-4.png" id="4_etrdt"]
+[ext_resource type="Texture2D" uid="uid://c2qokdjt1omeo" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-5.png" id="5_x1r1x"]
+[ext_resource type="Texture2D" uid="uid://d15yuefj0g2yd" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-6.png" id="6_o1df0"]
+[ext_resource type="Texture2D" uid="uid://dcd3of1ds04sa" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-7.png" id="7_e6wph"]
+[ext_resource type="Texture2D" uid="uid://c6aod6cmqf1kc" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-8.png" id="8_if6sk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5q0nq"]
 atlas = ExtResource("2_wjrvc")

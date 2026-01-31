@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://q1a4f1jeqsac"]
+[gd_scene load_steps=13 format=3 uid="uid://q1a4f1jeqsac"]
 
 [ext_resource type="Script" uid="uid://dcs06xtahal3c" path="res://scripts/fireball.gd" id="1_3s14c"]
 [ext_resource type="Texture2D" uid="uid://bfdg6y8c1uso6" path="res://Assets/fb_animation_1.png" id="2_1gl40"]
@@ -50,6 +50,15 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="Gradient" id="Gradient_21l5o"]
+offsets = PackedFloat32Array(0, 0.547368)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cb14k"]
+gradient = SubResource("Gradient_21l5o")
+fill = 1
+fill_from = Vector2(0.457265, 0.517094)
+
 [node name="Fireball" type="Area2D"]
 collision_layer = 2
 collision_mask = 2
@@ -70,3 +79,9 @@ target_position = Vector2(4, 0)
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_cb14k")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(4, -1)
+scale = Vector2(4.4502, 2.89063)
+energy = 0.9
+texture = SubResource("GradientTexture2D_cb14k")
