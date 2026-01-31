@@ -12,10 +12,13 @@ var dash_direction = Vector2.ZERO
 var is_dashing = false
 var dash_timer = 1.0
 var is_dead = false
+var max_jumps := 2
+var jumps_left := 2
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var dash: AudioStreamPlayer2D = $Dash
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var death: AudioStreamPlayer2D = $Death
+@export var enable_double_jump := true
 
 var heal_timer = 0.0
 
@@ -32,10 +35,19 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		jump.play()
-		velocity.y = JUMP_VELOCITY
+	# Handle jump + optional double jump
+	if is_on_floor():
+		jumps_left = max_jumps
+
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			jump.play()
+			velocity.y = JUMP_VELOCITY
+			jumps_left -= 1
+		elif enable_double_jump and jumps_left > 0:
+			jump.play()
+			velocity.y = JUMP_VELOCITY
+			jumps_left -= 1
 
 	var direction := Input.get_axis("move_left", "move_right")
 		
