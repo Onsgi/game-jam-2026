@@ -1,5 +1,8 @@
 class_name Player extends CharacterBody2D
 
+@export var fireball_scene: PackedScene = preload("res://scenes/fireball.tscn")
+@export var fire_offset: Vector2 = Vector2(10, -10) # where fireball spawns
+var facing: Vector2 = Vector2.RIGHT
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
@@ -15,7 +18,6 @@ var is_dead = false
 @onready var death: AudioStreamPlayer2D = $Death
 
 var heal_timer = 0.0
-
 
 func _ready():
 	if Game_config.has_checkpoint:
@@ -38,8 +40,13 @@ func _physics_process(delta: float) -> void:
 		
 	if direction > 0:
 		animated_sprite_2d.flip_h = false
+		facing = Vector2.RIGHT
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
+		facing = Vector2.LEFT
+		
+	if Input.is_action_just_pressed("fire"):
+		shoot_fireball()
 	
 	if Input.is_action_just_pressed("dash"):
 		dash.play()
@@ -68,7 +75,7 @@ func _physics_process(delta: float) -> void:
 			velocity.x = direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
 	# Healing Logic
 	if Input.is_action_pressed("heal") and is_on_floor() and velocity.x == 0:
 		if Game_config.lives < Game_config.MAX_LIVES:
@@ -97,6 +104,7 @@ func _physics_process(delta: float) -> void:
 		# We need to be careful not to override damage red flash
 		if not is_dead and animated_sprite_2d.modulate != Color.RED:
 			animated_sprite_2d.modulate = Color(1, 1, 1)
+
 
 	move_and_slide()
 	
@@ -128,3 +136,9 @@ func take_damage():
 
 func get_is_dashing():
 	return is_dashing
+
+func shoot_fireball() -> void:
+	var fb = fireball_scene.instantiate()
+	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
+	fb.direction = facing
+	get_tree().current_scene.add_child(fb)
