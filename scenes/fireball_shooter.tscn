@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://r1safdkfuojq"]
+
+[ext_resource type="Script" uid="uid://dgfbedp345ktq" path="res://scripts/fireball_shooter.gd" id="1_7ubwt"]
+[ext_resource type="Texture2D" uid="uid://m2q27tfh8wfi" path="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/goblin fanatic/GoblinFanatic.png" id="2_mrgm4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iu8yy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnopo"]
+atlas = ExtResource("2_mrgm4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fiurj"]
+atlas = ExtResource("2_mrgm4")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_586yw"]
+atlas = ExtResource("2_mrgm4")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r4g7"]
+atlas = ExtResource("2_mrgm4")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5gfpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnopo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fiurj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_586yw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r4g7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FireballShooter" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_7ubwt")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="ShootPoint" type="Marker2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iu8yy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5gfpu")

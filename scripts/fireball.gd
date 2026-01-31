@@ -1,4 +1,5 @@
 extends Area2D
+@onready var sound: AudioStreamPlayer2D = $Sound
 
 @export var speed: float = 250.0
 @export var direction: Vector2 = Vector2.RIGHT
@@ -8,6 +9,8 @@ func _ready() -> void:
 	add_to_group("fireball")
 	body_entered.connect(_on_hit)
 	$AnimatedSprite2D.flip_h = direction.x < 0
+	
+	sound.play()
 
 	$Timer.wait_time = lifetime
 	$Timer.start()
@@ -27,6 +30,10 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_hit(body: Node) -> void:
+	print("hit")
+	if body.is_in_group("player"):
+		if body.has_method("take_damage"):
+			body.take_damage()
 	explode()
 
 

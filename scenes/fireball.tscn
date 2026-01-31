@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://q1a4f1jeqsac"]
+[gd_scene load_steps=11 format=3 uid="uid://q1a4f1jeqsac"]
 
 [ext_resource type="Script" uid="uid://dcs06xtahal3c" path="res://scripts/fireball.gd" id="1_3s14c"]
 [ext_resource type="Texture2D" uid="uid://bfdg6y8c1uso6" path="res://Assets/fb_animation_1.png" id="2_1gl40"]
+[ext_resource type="AudioStream" uid="uid://dpm3rl1o1xmgk" path="res://Assets/fireball_sound.mp3" id="3_cb14k"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3s14c"]
 radius = 3.0
@@ -50,6 +51,8 @@ animations = [{
 }]
 
 [node name="Fireball" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_3s14c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -64,3 +67,6 @@ sprite_frames = SubResource("SpriteFrames_86oub")
 target_position = Vector2(4, 0)
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_cb14k")
