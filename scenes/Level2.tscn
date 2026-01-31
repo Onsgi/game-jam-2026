@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://b078b2oosu83e"]
+[gd_scene load_steps=16 format=4 uid="uid://bd4m5kd2mrqjb"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
-[ext_resource type="PackedScene" uid="uid://r1safdkfuojq" path="res://scenes/fireball_shooter.tscn" id="1_rcugv"]
+[ext_resource type="PackedScene" uid="uid://dgtqdnm0x4gy3" path="res://scenes/fireball_shooter.tscn" id="1_rcugv"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
 [ext_resource type="TileSet" uid="uid://c7qgwmt386soi" path="res://main.tres" id="3_ecr63"]
 [ext_resource type="PackedScene" uid="uid://bqrh5u2recb8r" path="res://scenes/ui.tscn" id="4_n34uq"]
@@ -9,8 +9,9 @@
 [ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="6_4dyl1"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
-[ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_portal"]
-[ext_resource type="PackedScene" uid="uid://12pwn2y47o2n" path="res://scenes/ice_cube.tscn" id="10_v8268"]
+[ext_resource type="PackedScene" uid="uid://c71d5smhcllkw" path="res://scenes/portal.tscn" id="9_portal"]
+[ext_resource type="PackedScene" path="res://scenes/ice_cube.tscn" id="10_v8268"]
+[ext_resource type="PackedScene" uid="uid://utmphpojwcyp" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -138,3 +139,6 @@ position = Vector2(357, 104)
 
 [node name="IceCube15" parent="IceCubes" instance=ExtResource("10_v8268")]
 position = Vector2(394, 92)
+
+[node name="MaskTrigger" parent="." instance=ExtResource("12_3aekd")]
+position = Vector2(703, 133)

@@ -13,7 +13,21 @@ var highscore = 0
 var last_checkpoint_position = Vector2.ZERO
 var has_checkpoint = false
 var last_checkpoint_scene = ""
-var current_skin = "golden"
+var current_skin = "fire"
+
+var collected_masks = {
+	"fire": false,
+	"golden": true,
+	"jumping": false
+}
+
+func collect_mask(mask_name: String):
+	if mask_name in collected_masks:
+		collected_masks[mask_name] = true
+		print("Collected mask: " + mask_name)
+
+func has_mask(mask_name: String) -> bool:
+	return collected_masks.get(mask_name, false)
 
 var soul = 0
 const MAX_SOUL = 100

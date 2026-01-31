@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bwbxd80v4y3t4"]
 
-[ext_resource type="Script" path="res://scripts/mask_trigger.gd" id="1_ebufu"]
+[ext_resource type="Script" uid="uid://b6i2btf23xdtr" path="res://scripts/mask_trigger.gd" id="1_ebufu"]
 [ext_resource type="Texture2D" uid="uid://br0nrkwfturmu" path="res://Assets/background/mask pickup.png" id="2_okbi1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_okbi1"]

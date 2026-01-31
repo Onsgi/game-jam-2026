@@ -65,7 +65,7 @@ func _physics_process(delta: float) -> void:
 			jump.play()
 			velocity.y = JUMP_VELOCITY
 			jumps_left -= 1
-		elif enable_double_jump and jumps_left > 0:
+		elif enable_double_jump and jumps_left > 0 and Game_config.has_mask("jumping"):
 			jump.play()
 			velocity.y = JUMP_VELOCITY
 			jumps_left -= 1
@@ -79,10 +79,10 @@ func _physics_process(delta: float) -> void:
 		current_skin.flip_h = true
 		facing = Vector2.LEFT
 		
-	if Input.is_action_just_pressed("fire"):
+	if Input.is_action_just_pressed("fire") and Game_config.has_mask("fire"):
 		shoot_fireball()
 	
-	if Input.is_action_just_pressed("dash"):
+	if Input.is_action_just_pressed("dash") and Game_config.has_mask("golden"):
 		dash.play()
 		is_dashing = true
 		if direction != 0:
