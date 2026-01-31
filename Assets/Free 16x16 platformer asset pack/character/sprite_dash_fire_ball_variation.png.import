@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnopl827x20ay"
-path="res://.godot/imported/Boss_Mask_Double_Jump_Dropped.png-91604c309b502f018223de60eb6449d0.ctex"
+uid="uid://cugliwl8ea0l7"
+path="res://.godot/imported/sprite_dash_fire_ball_variation.png-9a39dc758182d3e13ca10d0a764db5ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mask_Dropped/Boss_Mask_Double_Jump_Dropped.png"
-dest_files=["res://.godot/imported/Boss_Mask_Double_Jump_Dropped.png-91604c309b502f018223de60eb6449d0.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/character/sprite_dash_fire_ball_variation.png"
+dest_files=["res://.godot/imported/sprite_dash_fire_ball_variation.png-9a39dc758182d3e13ca10d0a764db5ed.ctex"]
 
 [params]
 

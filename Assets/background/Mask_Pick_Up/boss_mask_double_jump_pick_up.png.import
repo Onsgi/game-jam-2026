@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://do3r8nxm635hi"
-=======
-uid="uid://br0nrkwfturmu"
->>>>>>> 615ba957d9b4706503573cc4543f9d1631a2a8d8
-path="res://.godot/imported/mask pickup.png-9ae37912f18fab59b64a1d4b22c96fbf.ctex"
+uid="uid://dpc1yevvgswue"
+path="res://.godot/imported/boss_mask_double_jump_pick_up.png-0160f1c39468bd7024845138dbf151ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/mask pickup.png"
-dest_files=["res://.godot/imported/mask pickup.png-9ae37912f18fab59b64a1d4b22c96fbf.ctex"]
+source_file="res://Assets/background/Mask_Pick_Up/boss_mask_double_jump_pick_up.png"
+dest_files=["res://.godot/imported/boss_mask_double_jump_pick_up.png-0160f1c39468bd7024845138dbf151ee.ctex"]
 
 [params]
 

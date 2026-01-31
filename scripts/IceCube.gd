@@ -11,26 +11,25 @@ func _ready() -> void:
 	start_scale = scale
 	$Area2D.area_entered.connect(_on_area_entered)
 
-
 func _on_area_entered(area: Area2D) -> void:
 	if melting:
 		return
 
 	if area.is_in_group("fireball"):
-		print("1")
 		start_melting()
-
 
 func start_melting() -> void:
 	melting = true
 	elapsed = 0.0
 
-	# Disable physics collision so it no longer blocks anything
 	$CollisionShape2D.disabled = true
 
-	# Optional: freeze the body so it doesn't fall while melting
-	freeze = true
+	# Wake any rigid bodies touching this one
+	for body in $Area2D.get_overlapping_bodies():
+		if body is RigidBody2D:
+			body.sleeping = false
 
+	freeze = true
 
 func _process(delta: float) -> void:
 	if not melting:

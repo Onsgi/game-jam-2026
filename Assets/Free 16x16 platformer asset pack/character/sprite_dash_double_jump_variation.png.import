@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://do3r8nxm635hi"
-=======
-uid="uid://br0nrkwfturmu"
->>>>>>> 615ba957d9b4706503573cc4543f9d1631a2a8d8
-path="res://.godot/imported/mask pickup.png-9ae37912f18fab59b64a1d4b22c96fbf.ctex"
+uid="uid://d25l6c3ll6854"
+path="res://.godot/imported/sprite_dash_double_jump_variation.png-1f22577942726dfb68c43260afbde42e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/mask pickup.png"
-dest_files=["res://.godot/imported/mask pickup.png-9ae37912f18fab59b64a1d4b22c96fbf.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/character/sprite_dash_double_jump_variation.png"
+dest_files=["res://.godot/imported/sprite_dash_double_jump_variation.png-1f22577942726dfb68c43260afbde42e.ctex"]
 
 [params]
 
