@@ -20,7 +20,6 @@ func _ready():
 	original_position = position
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	
 	if is_dead:
 		if not $AnimatedSprite2D.is_playing():
 			if $AnimatedSprite2D.animation_finished and $AnimatedSprite2D.animation == "death":
@@ -52,15 +51,16 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.get_death():
-		return
-	var player = get_node("/root/Main/Player")
-	if player.get_is_dashing():
-		is_dead = true
-	else:
-		player.set_death()
-		Engine.time_scale = 0.5
-		timer.start()
+	if body is Player:
+		if body.get_death():
+			return
+		
+		if body.get_is_dashing():
+			is_dead = true
+		else:
+			body.set_death()
+			Engine.time_scale = 0.5
+			timer.start()
 
 
 func _on_timer_timeout() -> void:

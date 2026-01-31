@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyikaom5hxysw"
-path="res://.godot/imported/GoblinFighter.png-047709902c427f65ce1f96067c82119a.ctex"
+path="res://.godot/imported/GoblinFighter.png-95ecaca1e6c93e6682691b3d7311c05e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/goblin fighter/GoblinFighter.png"
-dest_files=["res://.godot/imported/GoblinFighter.png-047709902c427f65ce1f96067c82119a.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/goblin fighter/GoblinFighter.png"
+dest_files=["res://.godot/imported/GoblinFighter.png-95ecaca1e6c93e6682691b3d7311c05e.ctex"]
 
 [params]
 

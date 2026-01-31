@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc33xwfs3sfai"
-path="res://.godot/imported/sprite_poison.png-2f012d07b58db0869ee71ff0c062e0c0.ctex"
+path="res://.godot/imported/sprite_poison.png-894f821c36d0205553827c9bcf6e0714.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free 16x16 platformer asset pack/character/sprite_poison.png"
-dest_files=["res://.godot/imported/sprite_poison.png-2f012d07b58db0869ee71ff0c062e0c0.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/character/sprite_poison.png"
+dest_files=["res://.godot/imported/sprite_poison.png-894f821c36d0205553827c9bcf6e0714.ctex"]
 
 [params]
 

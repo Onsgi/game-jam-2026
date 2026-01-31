@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cmwpmpi3j56p"
-path="res://.godot/imported/BoxCat Games - Assignment.mp3-31c23bca2066dbd9c05b3a07603a0512.mp3str"
+path="res://.godot/imported/BoxCat Games - Assignment.mp3-0fa0a2e0d340d2c52f4ae01044d66eb1.mp3str"
 
 [deps]
 
-source_file="res://assets/BoxCat Games - Assignment.mp3"
-dest_files=["res://.godot/imported/BoxCat Games - Assignment.mp3-31c23bca2066dbd9c05b3a07603a0512.mp3str"]
+source_file="res://Assets/BoxCat Games - Assignment.mp3"
+dest_files=["res://.godot/imported/BoxCat Games - Assignment.mp3-0fa0a2e0d340d2c52f4ae01044d66eb1.mp3str"]
 
 [params]
 

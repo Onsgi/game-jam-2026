@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://djyl2unioiar"]
 
 [ext_resource type="Script" uid="uid://bsor1uwerjreh" path="res://scripts/music_area.gd" id="1_i1wpf"]
-[ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://assets/BoxCat Games - Assignment.mp3" id="2_f757v"]
+[ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="2_f757v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jbj1t"]
 size = Vector2(20, 268)

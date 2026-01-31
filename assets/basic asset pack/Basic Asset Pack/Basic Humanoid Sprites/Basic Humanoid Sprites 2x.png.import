@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnbukinwbphho"
-path="res://.godot/imported/Basic Humanoid Sprites 2x.png-936cd0a50e91f37418c2584e0b17c4d4.ctex"
+path="res://.godot/imported/Basic Humanoid Sprites 2x.png-f9a56199a21b100de92f178db59f848f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Sprites/Basic Humanoid Sprites 2x.png"
-dest_files=["res://.godot/imported/Basic Humanoid Sprites 2x.png-936cd0a50e91f37418c2584e0b17c4d4.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Sprites/Basic Humanoid Sprites 2x.png"
+dest_files=["res://.godot/imported/Basic Humanoid Sprites 2x.png-f9a56199a21b100de92f178db59f848f.ctex"]
 
 [params]
 

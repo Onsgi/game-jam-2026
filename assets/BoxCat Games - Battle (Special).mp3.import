@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c1fufrfiphiif"
-path="res://.godot/imported/BoxCat Games - Battle (Special).mp3-c3dd7e1f0865e35d363234d571334932.mp3str"
+path="res://.godot/imported/BoxCat Games - Battle (Special).mp3-1d9075d9ac848166b657c33a052435b1.mp3str"
 
 [deps]
 
-source_file="res://assets/BoxCat Games - Battle (Special).mp3"
-dest_files=["res://.godot/imported/BoxCat Games - Battle (Special).mp3-c3dd7e1f0865e35d363234d571334932.mp3str"]
+source_file="res://Assets/BoxCat Games - Battle (Special).mp3"
+dest_files=["res://.godot/imported/BoxCat Games - Battle (Special).mp3-1d9075d9ac848166b657c33a052435b1.mp3str"]
 
 [params]
 

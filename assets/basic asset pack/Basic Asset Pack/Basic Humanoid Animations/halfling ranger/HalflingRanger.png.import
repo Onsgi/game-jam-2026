@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8mn2yhlq5mf5"
-path="res://.godot/imported/HalflingRanger.png-91c409bb1017c1c98cfc63fd94db22fb.ctex"
+path="res://.godot/imported/HalflingRanger.png-671af4f3f6be8d27a210a405b93d3112.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling ranger/HalflingRanger.png"
-dest_files=["res://.godot/imported/HalflingRanger.png-91c409bb1017c1c98cfc63fd94db22fb.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling ranger/HalflingRanger.png"
+dest_files=["res://.godot/imported/HalflingRanger.png-671af4f3f6be8d27a210a405b93d3112.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pvgm7qngevvb"
-path="res://.godot/imported/purplegoblet3flameani3.png-588b5ca9ea43913bbdf61733ca987bb9.ctex"
+path="res://.godot/imported/purplegoblet3flameani3.png-ad858fa5997368a44958a88f4464a5ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Goblets/Flame Animation Files/Goblet3/Purple Animation Files/purplegoblet3flameani3.png"
-dest_files=["res://.godot/imported/purplegoblet3flameani3.png-588b5ca9ea43913bbdf61733ca987bb9.ctex"]
+source_file="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Goblets/Flame Animation Files/Goblet3/Purple Animation Files/purplegoblet3flameani3.png"
+dest_files=["res://.godot/imported/purplegoblet3flameani3.png-ad858fa5997368a44958a88f4464a5ca.ctex"]
 
 [params]
 

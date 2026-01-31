@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://n4f0tlmxn6ur"
-path="res://.godot/imported/male-death-sound-128357.mp3-c3b3f923030eb624fca95d358f61ce67.mp3str"
+path="res://.godot/imported/male-death-sound-128357.mp3-f4127e6352ebfcea1936701e9333325d.mp3str"
 
 [deps]
 
-source_file="res://assets/male-death-sound-128357.mp3"
-dest_files=["res://.godot/imported/male-death-sound-128357.mp3-c3b3f923030eb624fca95d358f61ce67.mp3str"]
+source_file="res://Assets/male-death-sound-128357.mp3"
+dest_files=["res://.godot/imported/male-death-sound-128357.mp3-f4127e6352ebfcea1936701e9333325d.mp3str"]
 
 [params]
 

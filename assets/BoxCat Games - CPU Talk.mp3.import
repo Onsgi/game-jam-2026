@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://djta0312c77y3"
-path="res://.godot/imported/BoxCat Games - CPU Talk.mp3-404cc36c4dfb0257305e1fb216f604da.mp3str"
+path="res://.godot/imported/BoxCat Games - CPU Talk.mp3-f2c76af525585f5974f311306bfe83e3.mp3str"
 
 [deps]
 
-source_file="res://assets/BoxCat Games - CPU Talk.mp3"
-dest_files=["res://.godot/imported/BoxCat Games - CPU Talk.mp3-404cc36c4dfb0257305e1fb216f604da.mp3str"]
+source_file="res://Assets/BoxCat Games - CPU Talk.mp3"
+dest_files=["res://.godot/imported/BoxCat Games - CPU Talk.mp3-f2c76af525585f5974f311306bfe83e3.mp3str"]
 
 [params]
 

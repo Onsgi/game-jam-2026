@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce515qj7j47kp"
-path="res://.godot/imported/LizardfolkGladiator.png-ef7130f2567a5446646facb59cec8163.ctex"
+path="res://.godot/imported/LizardfolkGladiator.png-739bfc723401cc53df0ef55fa26da018.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk gladiator/LizardfolkGladiator.png"
-dest_files=["res://.godot/imported/LizardfolkGladiator.png-ef7130f2567a5446646facb59cec8163.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk gladiator/LizardfolkGladiator.png"
+dest_files=["res://.godot/imported/LizardfolkGladiator.png-739bfc723401cc53df0ef55fa26da018.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://og5sbgmjk5xp"
-path="res://.godot/imported/LizardfolkSpearman.png-c32f69b828bbe73920f0955832032324.ctex"
+path="res://.godot/imported/LizardfolkSpearman.png-1af4799206f069b8d03a89e32e6ff09d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk spearman/LizardfolkSpearman.png"
-dest_files=["res://.godot/imported/LizardfolkSpearman.png-c32f69b828bbe73920f0955832032324.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk spearman/LizardfolkSpearman.png"
+dest_files=["res://.godot/imported/LizardfolkSpearman.png-1af4799206f069b8d03a89e32e6ff09d.ctex"]
 
 [params]
 

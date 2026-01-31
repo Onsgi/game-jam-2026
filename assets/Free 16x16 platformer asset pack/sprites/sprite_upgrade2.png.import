@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2i0no6cveogi"
-path="res://.godot/imported/sprite_upgrade2.png-f23fe5092136141e5b4ad779e5248199.ctex"
+path="res://.godot/imported/sprite_upgrade2.png-58c59c6ee94da9243bf4231fdaff9569.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free 16x16 platformer asset pack/sprites/sprite_upgrade2.png"
-dest_files=["res://.godot/imported/sprite_upgrade2.png-f23fe5092136141e5b4ad779e5248199.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_upgrade2.png"
+dest_files=["res://.godot/imported/sprite_upgrade2.png-58c59c6ee94da9243bf4231fdaff9569.ctex"]
 
 [params]
 

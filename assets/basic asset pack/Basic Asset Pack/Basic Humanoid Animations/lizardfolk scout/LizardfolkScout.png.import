@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfyk3u4idwo8g"
-path="res://.godot/imported/LizardfolkScout.png-ad7fceb24ec903d096e033c5025458c9.ctex"
+path="res://.godot/imported/LizardfolkScout.png-178fbda943ea492f0a80ab9fda6d8604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk scout/LizardfolkScout.png"
-dest_files=["res://.godot/imported/LizardfolkScout.png-ad7fceb24ec903d096e033c5025458c9.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk scout/LizardfolkScout.png"
+dest_files=["res://.godot/imported/LizardfolkScout.png-178fbda943ea492f0a80ab9fda6d8604.ctex"]
 
 [params]
 

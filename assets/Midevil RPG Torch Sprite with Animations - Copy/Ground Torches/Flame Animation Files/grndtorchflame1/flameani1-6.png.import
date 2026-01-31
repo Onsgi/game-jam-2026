@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d15yuefj0g2yd"
-path="res://.godot/imported/flameani1-6.png-ba3b6b108e410be52ee5a5a62e43474d.ctex"
+path="res://.godot/imported/flameani1-6.png-5c9579beb695367ba0a11ad3d8dc342d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-6.png"
-dest_files=["res://.godot/imported/flameani1-6.png-ba3b6b108e410be52ee5a5a62e43474d.ctex"]
+source_file="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/Flame Animation Files/grndtorchflame1/flameani1-6.png"
+dest_files=["res://.godot/imported/flameani1-6.png-5c9579beb695367ba0a11ad3d8dc342d.ctex"]
 
 [params]
 

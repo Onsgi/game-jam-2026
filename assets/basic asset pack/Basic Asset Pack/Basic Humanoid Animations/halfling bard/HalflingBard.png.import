@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0pajubiclsfr"
-path="res://.godot/imported/HalflingBard.png-a15e75537d079e2ff4399792db610a5a.ctex"
+path="res://.godot/imported/HalflingBard.png-95abdef2cbbf0efed2bc9fbaaef5b733.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling bard/HalflingBard.png"
-dest_files=["res://.godot/imported/HalflingBard.png-a15e75537d079e2ff4399792db610a5a.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling bard/HalflingBard.png"
+dest_files=["res://.godot/imported/HalflingBard.png-95abdef2cbbf0efed2bc9fbaaef5b733.ctex"]
 
 [params]
 

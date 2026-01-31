@@ -1,10 +1,10 @@
 [gd_scene load_steps=100 format=3 uid="uid://bt5ggbfrc51g0"]
 
-[ext_resource type="Texture2D" uid="uid://vs0vq4t1gyf7" path="res://assets/Free 16x16 platformer asset pack/character/sprite_hero.png" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://drsfw244jm8n4" path="res://assets/Free 16x16 platformer asset pack/character/sprite_dash.png" id="1_g2els"]
-[ext_resource type="AudioStream" uid="uid://0s0yr5kf25k7" path="res://assets/woosh-230554.mp3" id="3_qhqgy"]
-[ext_resource type="AudioStream" uid="uid://b53t1eqhmfkk0" path="res://assets/brackeys/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
-[ext_resource type="AudioStream" uid="uid://n4f0tlmxn6ur" path="res://assets/male-death-sound-128357.mp3" id="5_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://vs0vq4t1gyf7" path="res://Assets/Free 16x16 platformer asset pack/character/sprite_hero.png" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://drsfw244jm8n4" path="res://Assets/Free 16x16 platformer asset pack/character/sprite_dash.png" id="1_g2els"]
+[ext_resource type="AudioStream" uid="uid://0s0yr5kf25k7" path="res://Assets/woosh-230554.mp3" id="3_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://b53t1eqhmfkk0" path="res://Assets/brackeys/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
+[ext_resource type="AudioStream" uid="uid://n4f0tlmxn6ur" path="res://Assets/male-death-sound-128357.mp3" id="5_qlg0r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gl8cc"]
 atlas = ExtResource("1_g2els")

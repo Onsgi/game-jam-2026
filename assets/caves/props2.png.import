@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpmdquh7vve1a"
-path="res://.godot/imported/props2.png-7696fb0060b402338495b68224418f0d.ctex"
+path="res://.godot/imported/props2.png-980c73f66947a7f9d9e1f97c4f43ccf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/caves/props2.png"
-dest_files=["res://.godot/imported/props2.png-7696fb0060b402338495b68224418f0d.ctex"]
+source_file="res://Assets/caves/props2.png"
+dest_files=["res://.godot/imported/props2.png-980c73f66947a7f9d9e1f97c4f43ccf1.ctex"]
 
 [params]
 

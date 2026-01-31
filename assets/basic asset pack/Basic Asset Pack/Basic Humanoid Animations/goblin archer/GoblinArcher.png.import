@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn3b5mrecmmdg"
-path="res://.godot/imported/GoblinArcher.png-480f0ccc8c0e676bc24b2cb55770bd09.ctex"
+path="res://.godot/imported/GoblinArcher.png-7e8df4cbadade89c11512da82db3bfae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/goblin archer/GoblinArcher.png"
-dest_files=["res://.godot/imported/GoblinArcher.png-480f0ccc8c0e676bc24b2cb55770bd09.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/goblin archer/GoblinArcher.png"
+dest_files=["res://.godot/imported/GoblinArcher.png-7e8df4cbadade89c11512da82db3bfae.ctex"]
 
 [params]
 

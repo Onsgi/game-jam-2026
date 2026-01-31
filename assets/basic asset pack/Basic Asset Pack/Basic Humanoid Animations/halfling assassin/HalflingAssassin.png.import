@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsaggm8umcv8"
-path="res://.godot/imported/HalflingAssassin.png-d5819e471e222bc7b9cae0ded272f8ac.ctex"
+path="res://.godot/imported/HalflingAssassin.png-ed70169a5335716c8558652058385503.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling assassin/HalflingAssassin.png"
-dest_files=["res://.godot/imported/HalflingAssassin.png-d5819e471e222bc7b9cae0ded272f8ac.ctex"]
+source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/halfling assassin/HalflingAssassin.png"
+dest_files=["res://.godot/imported/HalflingAssassin.png-ed70169a5335716c8558652058385503.ctex"]
 
 [params]
 

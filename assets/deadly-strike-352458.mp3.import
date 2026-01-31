@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dyipp0wnp16af"
-path="res://.godot/imported/deadly-strike-352458.mp3-79e5fc82a966e7fe07a2c0b64ff351ae.mp3str"
+path="res://.godot/imported/deadly-strike-352458.mp3-6a5f2dd1723daca1951c57522704fb85.mp3str"
 
 [deps]
 
-source_file="res://assets/deadly-strike-352458.mp3"
-dest_files=["res://.godot/imported/deadly-strike-352458.mp3-79e5fc82a966e7fe07a2c0b64ff351ae.mp3str"]
+source_file="res://Assets/deadly-strike-352458.mp3"
+dest_files=["res://.godot/imported/deadly-strike-352458.mp3-6a5f2dd1723daca1951c57522704fb85.mp3str"]
 
 [params]
 

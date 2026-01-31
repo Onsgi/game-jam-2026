@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://be61qi3byubs"
-path="res://.godot/imported/075681_electric-shock-33018.mp3-fb5e715091d59def278fda479823c3a1.mp3str"
+path="res://.godot/imported/075681_electric-shock-33018.mp3-776c671b0e007cd5d8c4aa8cfb5b9775.mp3str"
 
 [deps]
 
-source_file="res://assets/075681_electric-shock-33018.mp3"
-dest_files=["res://.godot/imported/075681_electric-shock-33018.mp3-fb5e715091d59def278fda479823c3a1.mp3str"]
+source_file="res://Assets/075681_electric-shock-33018.mp3"
+dest_files=["res://.godot/imported/075681_electric-shock-33018.mp3-776c671b0e007cd5d8c4aa8cfb5b9775.mp3str"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8c6cw8e2srhf"
-path="res://.godot/imported/romanpitfireani5.png-4f32a9ed097936e711ec9fff557b4033.ctex"
+path="res://.godot/imported/romanpitfireani5.png-b9f69646e2eef47dc8e9c92962047379.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Midevil RPG Torch Sprite with Animations - Copy/RomanThemedTorches/Flame Animation Files/romanpitfireani5.png"
-dest_files=["res://.godot/imported/romanpitfireani5.png-4f32a9ed097936e711ec9fff557b4033.ctex"]
+source_file="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/RomanThemedTorches/Flame Animation Files/romanpitfireani5.png"
+dest_files=["res://.godot/imported/romanpitfireani5.png-b9f69646e2eef47dc8e9c92962047379.ctex"]
 
 [params]
 

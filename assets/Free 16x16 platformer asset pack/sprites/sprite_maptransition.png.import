@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xqrpmjr7kpnb"
-path="res://.godot/imported/sprite_maptransition.png-03fd551f0b717cd741fd05300bedd97c.ctex"
+path="res://.godot/imported/sprite_maptransition.png-a63fc5d33d1dc1dcf85ddae1145f83d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free 16x16 platformer asset pack/sprites/sprite_maptransition.png"
-dest_files=["res://.godot/imported/sprite_maptransition.png-03fd551f0b717cd741fd05300bedd97c.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_maptransition.png"
+dest_files=["res://.godot/imported/sprite_maptransition.png-a63fc5d33d1dc1dcf85ddae1145f83d8.ctex"]
 
 [params]
 

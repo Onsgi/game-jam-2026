@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gsyuu88v6tn2"
-path="res://.godot/imported/sprite_encryptionkeygeneration1.png-a82a50871e4cbe15ccd99cc548c8f81d.ctex"
+path="res://.godot/imported/sprite_encryptionkeygeneration1.png-4a64a0481ff21a37fb32edad635242d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free 16x16 platformer asset pack/sprites/sprite_encryptionkeygeneration1.png"
-dest_files=["res://.godot/imported/sprite_encryptionkeygeneration1.png-a82a50871e4cbe15ccd99cc548c8f81d.ctex"]
+source_file="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_encryptionkeygeneration1.png"
+dest_files=["res://.godot/imported/sprite_encryptionkeygeneration1.png-4a64a0481ff21a37fb32edad635242d2.ctex"]
 
 [params]
 
