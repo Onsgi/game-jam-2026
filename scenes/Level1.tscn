@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://8p8rhijlqa4g"]
+[gd_scene load_steps=15 format=4 uid="uid://8p8rhijlqa4g"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
 [ext_resource type="PackedScene" uid="uid://c71d5smhcllkw" path="res://scenes/portal.tscn" id="9_n34uq"]
+[ext_resource type="PackedScene" uid="uid://c81fkr1emjbi5" path="res://scenes/knight.tscn" id="10_4dyl1"]
+[ext_resource type="PackedScene" uid="uid://d1ectyb4wjfnr" path="res://scenes/purple_slime.tscn" id="10_kbo48"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -83,3 +85,9 @@ position = Vector2(228.765, 54.1756)
 
 [node name="Portal" parent="." instance=ExtResource("9_n34uq")]
 position = Vector2(220, 11)
+
+[node name="Knight" parent="." instance=ExtResource("10_4dyl1")]
+position = Vector2(552, 120)
+
+[node name="PurpleSlime" parent="." instance=ExtResource("10_kbo48")]
+position = Vector2(-103.898, 84.5909)

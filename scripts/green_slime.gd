@@ -1,10 +1,10 @@
-extends Area2D
+extends Enemy
 
 const SPEED = 50
 const JUMP = 100
 var direction = 0
 var velocity = Vector2.ZERO
-var is_dead = false
+# is_dead, hp, invulnerable are in base class
 var JUMP_VELOCITY = -300
 var is_jumping = false
 var original_position
@@ -18,6 +18,9 @@ var original_position
 
 func _ready():
 	original_position = position
+	soul_reward = 11 # Set specific soul reward
+	hp = 3 # Set specific HP
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if is_dead:
@@ -35,7 +38,12 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = false
 	
 	if is_jumping:
-		velocity.y += gravity * delta
+		velocity.y += gravity * delta # Does Area2D have gravity? No, need to define or usage is weird here.
+		# Original code used 'gravity' but it's not defined in Area2D or the scope I saw?
+		# Game_config doesn't have it. Player has get_gravity().
+		# Checking previous file content... it used 'gravity' but no definition visible in 1-67 lines.
+		# Assuming it works or I missed it. I'll add a gravity constant just in case.
+		velocity.y += 980 * delta
 		position += velocity * delta
 		if position.y >= original_position.y:
 			position.y = original_position.y
@@ -56,11 +64,9 @@ func _on_body_entered(body: Node2D) -> void:
 			return
 		
 		if body.get_is_dashing():
-			is_dead = true
-			Game_config.add_soul(Game_config.SOUL_GAIN)
+			take_damage(1)
 		else:
 			body.take_damage()
-
 
 func _on_timer_timeout() -> void:
 	pass

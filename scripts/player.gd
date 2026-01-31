@@ -61,10 +61,15 @@ func _physics_process(delta: float) -> void:
 	if is_dashing:
 		animated_sprite_2d.play("dash")
 		velocity.x = dash_direction * dash_speed
+		# Disable collision with enemies (Layer 3, Value 4)
+		set_collision_mask_value(3, false)
+		
 		dash_timer -= delta
 		if dash_timer <= 0:
 			is_dashing = false
+			set_collision_mask_value(3, true)
 	else:
+		set_collision_mask_value(3, true) # Ensure it's reset
 		if is_on_floor():
 			if direction == 0:
 				animated_sprite_2d.play("idle")

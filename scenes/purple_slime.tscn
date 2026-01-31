@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://buwqvgpn5goji"]
+[gd_scene load_steps=17 format=3 uid="uid://d1ectyb4wjfnr"]
 
-[ext_resource type="Texture2D" uid="uid://drp4rgs5bh252" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/slime_green.png" id="1_bln8p"]
-[ext_resource type="Script" uid="uid://bmlagkggs27oh" path="res://scripts/green_slime.gd" id="1_tuic5"]
+[ext_resource type="Texture2D" uid="uid://db5ryvyib322a" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/slime_purple.png" id="1_bln8p"]
+[ext_resource type="Script" uid="uid://knhq23bwsybt" path="res://scripts/purple_slime.gd" id="1_tuic5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuic5"]
 atlas = ExtResource("1_bln8p")
@@ -103,13 +103,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ya4ey"]
 size = Vector2(6.75, 8.75)
 
-[node name="GreenSlime" type="Area2D"]
+[node name="PurpleSlime" type="Area2D"]
 collision_mask = 2
 script = ExtResource("1_tuic5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_choun")
-animation = &"idle"
+animation = &"death"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 6)
