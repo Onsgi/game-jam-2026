@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vs0vq4t1gyf7"
-path="res://.godot/imported/sprite_hero.png-7c3df9765923e93418f32b3be4f3bb89.ctex"
+path="res://.godot/imported/sprite_hero.png-b435416ae20a8cac51b53bbb7cada2b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 16x16 platformer asset pack/character/sprite_hero.png"
-dest_files=["res://.godot/imported/sprite_hero.png-7c3df9765923e93418f32b3be4f3bb89.ctex"]
+source_file="res://Assets/Characters/character/sprite_hero.png"
+dest_files=["res://.godot/imported/sprite_hero.png-b435416ae20a8cac51b53bbb7cada2b5.ctex"]
 
 [params]
 

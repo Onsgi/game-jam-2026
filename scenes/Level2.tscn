@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=4 uid="uid://b078b2oosu83e"]
+[gd_scene load_steps=17 format=4 uid="uid://bd4m5kd2mrqjb"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
-[ext_resource type="PackedScene" uid="uid://r1safdkfuojq" path="res://scenes/fireball_shooter.tscn" id="1_rcugv"]
+[ext_resource type="PackedScene" uid="uid://dgtqdnm0x4gy3" path="res://scenes/fireball_shooter.tscn" id="1_rcugv"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
 [ext_resource type="TileSet" uid="uid://c7qgwmt386soi" path="res://main.tres" id="3_ecr63"]
 [ext_resource type="PackedScene" uid="uid://bqrh5u2recb8r" path="res://scenes/ui.tscn" id="4_n34uq"]
@@ -10,9 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://i4cmyxsbih01" path="res://scenes/torch.tscn" id="7_khw7m"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
-[ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_portal"]
-[ext_resource type="PackedScene" uid="uid://12pwn2y47o2n" path="res://scenes/ice_cube.tscn" id="10_v8268"]
-[ext_resource type="PackedScene" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
+[ext_resource type="PackedScene" uid="uid://c71d5smhcllkw" path="res://scenes/portal.tscn" id="9_portal"]
+[ext_resource type="PackedScene" path="res://scenes/ice_cube.tscn" id="10_v8268"]
+[ext_resource type="PackedScene" uid="uid://utmphpojwcyp" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -30,7 +30,7 @@ shader_parameter/noise_texture = SubResource("NoiseTexture2D_dp3eg")
 shader_parameter/density = 0.25
 shader_parameter/speed = Vector2(0.03, 0.02)
 
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D3" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_76388")]
 position = Vector2(14, 43)

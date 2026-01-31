@@ -180,4 +180,5 @@ func shoot_fireball() -> void:
 	var fb = fireball_scene.instantiate()
 	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
 	fb.direction = facing
+	fb.shooter = self
 	get_tree().current_scene.add_child(fb)

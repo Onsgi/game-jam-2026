@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gsyuu88v6tn2"
-path="res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"
+uid="uid://cfmo24ctinvyg"
+path="res://.godot/imported/sprite_hero_double_jump_variation.png-150ba6f044f31adf6bbb67a789ef3c19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/sprites/sprite_encryptionkeygeneration1.png"
-dest_files=["res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"]
+source_file="res://Assets/Characters/character/sprite_hero_double_jump_variation.png"
+dest_files=["res://.godot/imported/sprite_hero_double_jump_variation.png-150ba6f044f31adf6bbb67a789ef3c19.ctex"]
 
 [params]
 

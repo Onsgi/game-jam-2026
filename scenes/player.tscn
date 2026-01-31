@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bt5ggbfrc51g0"]
 
 [ext_resource type="AudioStream" uid="uid://0s0yr5kf25k7" path="res://Assets/woosh-230554.mp3" id="3_qhqgy"]
-[ext_resource type="AudioStream" uid="uid://b53t1eqhmfkk0" path="res://Assets/brackeys/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
+[ext_resource type="AudioStream" path="res://Assets/brackeys/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
 [ext_resource type="SpriteFrames" uid="uid://bim7bjkijcjtn" path="res://frames/golden.tres" id="5_fjrip"]
 [ext_resource type="AudioStream" uid="uid://n4f0tlmxn6ur" path="res://Assets/male-death-sound-128357.mp3" id="5_qlg0r"]
 

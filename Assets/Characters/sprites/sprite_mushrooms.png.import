@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d13x7cs1osvva"
-path="res://.godot/imported/sprite_mushrooms.png-0fb64bd463e38faad96759178a74e610.ctex"
+path="res://.godot/imported/sprite_mushrooms.png-9444d9d897cd2980fd990aa9694c35dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_mushrooms.png"
-dest_files=["res://.godot/imported/sprite_mushrooms.png-0fb64bd463e38faad96759178a74e610.ctex"]
+source_file="res://Assets/Characters/sprites/sprite_mushrooms.png"
+dest_files=["res://.godot/imported/sprite_mushrooms.png-9444d9d897cd2980fd990aa9694c35dd.ctex"]
 
 [params]
 

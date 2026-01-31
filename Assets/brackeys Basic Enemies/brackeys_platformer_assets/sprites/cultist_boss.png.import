@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gsyuu88v6tn2"
-path="res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"
+uid="uid://d5xcnars3c8j"
+path="res://.godot/imported/cultist_boss.png-8b36827cd3cecbdb5cfecc1c91a806b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/sprites/sprite_encryptionkeygeneration1.png"
-dest_files=["res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"]
+source_file="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/cultist_boss.png"
+dest_files=["res://.godot/imported/cultist_boss.png-8b36827cd3cecbdb5cfecc1c91a806b1.ctex"]
 
 [params]
 

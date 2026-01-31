@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gsyuu88v6tn2"
-path="res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"
+uid="uid://bxqw1mhkxqnkh"
+path="res://.godot/imported/sprite_dash_fire_ball_variation.png-6730d001a50ded9b450a5efb8db95d5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/sprites/sprite_encryptionkeygeneration1.png"
-dest_files=["res://.godot/imported/sprite_encryptionkeygeneration1.png-020adb115cb28df492b3a68a167b209b.ctex"]
+source_file="res://Assets/Characters/character/sprite_dash_fire_ball_variation.png"
+dest_files=["res://.godot/imported/sprite_dash_fire_ball_variation.png-6730d001a50ded9b450a5efb8db95d5c.ctex"]
 
 [params]
 

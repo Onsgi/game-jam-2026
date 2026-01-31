@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0u36oku7736o"
-path="res://.godot/imported/coin.png-f1119093869ebe4eae0799bb482f6617.ctex"
+path="res://.godot/imported/coin.png-fe1bd320602a27f772e486b56417f3d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/brackeys/brackeys_platformer_assets/sprites/coin.png"
-dest_files=["res://.godot/imported/coin.png-f1119093869ebe4eae0799bb482f6617.ctex"]
+source_file="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/coin.png"
+dest_files=["res://.godot/imported/coin.png-fe1bd320602a27f772e486b56417f3d3.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2byvmpou52lb"
-path="res://.godot/imported/sprite_rebirth.png-277035e0eb77c02a0a5f03c679c1f4aa.ctex"
+path="res://.godot/imported/sprite_rebirth.png-bc2154a570b5c3dd998c35cbf63023d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 16x16 platformer asset pack/character/sprite_rebirth.png"
-dest_files=["res://.godot/imported/sprite_rebirth.png-277035e0eb77c02a0a5f03c679c1f4aa.ctex"]
+source_file="res://Assets/Characters/character/sprite_rebirth.png"
+dest_files=["res://.godot/imported/sprite_rebirth.png-bc2154a570b5c3dd998c35cbf63023d7.ctex"]
 
 [params]
 

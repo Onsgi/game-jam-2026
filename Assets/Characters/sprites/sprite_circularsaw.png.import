@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://udrohflig6o7"
-path="res://.godot/imported/sprite_circularsaw.png-994ff0ed56bcf47341334171a6290c01.ctex"
+path="res://.godot/imported/sprite_circularsaw.png-0d5ef93f7c3cdb628a458916db80dda6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_circularsaw.png"
-dest_files=["res://.godot/imported/sprite_circularsaw.png-994ff0ed56bcf47341334171a6290c01.ctex"]
+source_file="res://Assets/Characters/sprites/sprite_circularsaw.png"
+dest_files=["res://.godot/imported/sprite_circularsaw.png-0d5ef93f7c3cdb628a458916db80dda6.ctex"]
 
 [params]
 

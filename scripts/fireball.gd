@@ -31,10 +31,12 @@ func _physics_process(delta: float) -> void:
 		explode()
 
 
+var shooter = null
 
 func _on_hit(body: Node) -> void:
+	if body == shooter: return
 	print("hit")
-	if body.is_in_group("player"):
+	if body.is_in_group("player") or body.is_in_group("enemy"):
 		if body.has_method("take_damage"):
 			body.take_damage()
 	explode()
