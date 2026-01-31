@@ -21,12 +21,15 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	# Move forward
 	position += direction.normalized() * speed * delta
 
-	# Stop if RayCast2D detects something
 	if $RayCast2D.is_colliding():
+		var hit = $RayCast2D.get_collider()
+		if hit and hit.is_in_group("icecube"):
+			if hit.has_method("start_melting"):
+				hit.start_melting()
 		explode()
+
 
 
 func _on_hit(body: Node) -> void:

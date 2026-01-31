@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var label := $Label
-var full_text := "Hello traveler..."
+var full_text := "Hello traveler. \nUse WASD to Move.\n and Z to dash"
 var speed := 0.04
 var index := 0
 
