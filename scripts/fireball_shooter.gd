@@ -22,19 +22,23 @@ func _process(_delta: float) -> void:
 		$AnimatedSprite2D.flip_h = facing.x < 0
 
 func _shoot_fireball() -> void:
+	var player = get_tree().get_first_node_in_group("player")
+	if not player:
+		return
+
+	# Only shoot if player is within 1000 pixels
+	if global_position.distance_to(player.global_position) > 300:
+		return
+
 	var fb = fireball_scene.instantiate()
-
-	# Spawn at the shoot point
 	fb.position = $ShootPoint.global_position
-
-	# Set direction
 	fb.direction = facing
 
-	# Flip fireball animation if needed
 	if fb.has_node("AnimatedSprite2D"):
 		fb.get_node("AnimatedSprite2D").flip_h = facing.x < 0
 
 	get_tree().current_scene.add_child(fb)
+
 
 func take_damage(amount: int = 1) -> void:
 	if is_dead or invulnerable:

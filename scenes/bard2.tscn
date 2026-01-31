@@ -1,23 +1,23 @@
-[gd_scene load_steps=10 format=3 uid="uid://ctjp7vwnkc18m"]
+[gd_scene load_steps=10 format=3 uid="uid://bt7ghuu6rjx2n"]
 
-[ext_resource type="Texture2D" uid="uid://c0pajubiclsfr" path="res://Assets/halfling bard/HalflingBard.png" id="1_0yg1o"]
-[ext_resource type="Script" uid="uid://c8s054ts0yntd" path="res://scripts/bard.gd" id="1_nprmb"]
-[ext_resource type="FontFile" uid="uid://qwthqiuxkqy" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_nprmb"]
+[ext_resource type="Script" uid="uid://cvomj6fxg3ian" path="res://scripts/bard2.gd" id="1_bftof"]
+[ext_resource type="Texture2D" uid="uid://c0pajubiclsfr" path="res://Assets/halfling bard/HalflingBard.png" id="2_c2tad"]
+[ext_resource type="FontFile" uid="uid://qwthqiuxkqy" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_d8u3s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
-atlas = ExtResource("1_0yg1o")
+atlas = ExtResource("2_c2tad")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
-atlas = ExtResource("1_0yg1o")
+atlas = ExtResource("2_c2tad")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
-atlas = ExtResource("1_0yg1o")
+atlas = ExtResource("2_c2tad")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
-atlas = ExtResource("1_0yg1o")
+atlas = ExtResource("2_c2tad")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0ld40"]
@@ -45,7 +45,7 @@ size = Vector2(20, 93)
 
 [node name="Bard" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_nprmb")
+script = ExtResource("1_bftof")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0ld40")
@@ -56,7 +56,7 @@ offset_left = -48.0
 offset_top = -53.0
 offset_right = 108.0
 offset_bottom = -12.0
-theme_override_fonts/font = ExtResource("2_nprmb")
+theme_override_fonts/font = ExtResource("3_d8u3s")
 theme_override_font_sizes/font_size = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

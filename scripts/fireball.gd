@@ -35,7 +35,7 @@ var shooter = null
 
 func _on_hit(body: Node) -> void:
 	if body == shooter: return
-	print("hit")
+	print(body)
 	if body.is_in_group("player") or body.is_in_group("enemy"):
 		if body.has_method("take_damage"):
 			body.take_damage()

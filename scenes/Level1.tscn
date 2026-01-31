@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://8p8rhijlqa4g"]
+[gd_scene load_steps=22 format=4 uid="uid://8p8rhijlqa4g"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://dtbjp50ehmj3i" path="res://scenes/cutscene1.tscn" id="12_jxjwb"]
 [ext_resource type="PackedScene" uid="uid://ctjp7vwnkc18m" path="res://scenes/bard.tscn" id="13_0xqs2"]
 [ext_resource type="PackedScene" uid="uid://dgtqdnm0x4gy3" path="res://scenes/fireball_shooter.tscn" id="15_ipmer"]
+[ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="17_r7dij"]
+[ext_resource type="PackedScene" uid="uid://bt7ghuu6rjx2n" path="res://scenes/bard2.tscn" id="18_2ouud"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -141,3 +143,10 @@ position = Vector2(1292, 230)
 [node name="Cutscene" parent="." instance=ExtResource("12_jxjwb")]
 position = Vector2(997, 182)
 rotation = -0.243892
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_r7dij")
+autoplay = true
+
+[node name="Bard2" parent="." instance=ExtResource("18_2ouud")]
+position = Vector2(1375, 265)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bd4m5kd2mrqjb"]
+[gd_scene load_steps=18 format=4 uid="uid://bd4m5kd2mrqjb"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="PackedScene" uid="uid://dgtqdnm0x4gy3" path="res://scenes/fireball_shooter.tscn" id="1_rcugv"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_portal"]
 [ext_resource type="PackedScene" uid="uid://12pwn2y47o2n" path="res://scenes/ice_cube.tscn" id="10_v8268"]
 [ext_resource type="PackedScene" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
+[ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="14_wd6ad"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -106,25 +107,25 @@ position = Vector2(91, 71)
 position = Vector2(1005, 58)
 
 [node name="Portal" parent="." instance=ExtResource("9_portal")]
-position = Vector2(243, 74)
+position = Vector2(1331, -293)
 next_scene_path = "res://scenes/Level3.tscn"
 
 [node name="IceCubes" type="Node" parent="."]
 
 [node name="IceCube" parent="IceCubes" instance=ExtResource("10_v8268")]
-position = Vector2(280, 91)
+position = Vector2(279, 89)
 
 [node name="IceCube2" parent="IceCubes" instance=ExtResource("10_v8268")]
-position = Vector2(156, 72)
+position = Vector2(156, 74)
 
 [node name="IceCube3" parent="IceCubes" instance=ExtResource("10_v8268")]
-position = Vector2(156, 55)
+position = Vector2(156, 58)
 
 [node name="IceCube4" parent="IceCubes" instance=ExtResource("10_v8268")]
-position = Vector2(164, 39)
+position = Vector2(173, 73)
 
 [node name="IceCube5" parent="IceCubes" instance=ExtResource("10_v8268")]
-position = Vector2(165, 23)
+position = Vector2(160, 41)
 
 [node name="IceCube6" parent="IceCubes" instance=ExtResource("10_v8268")]
 position = Vector2(403, 122)
@@ -181,7 +182,7 @@ position = Vector2(919, -244)
 position = Vector2(936, -229)
 
 [node name="MaskTrigger" parent="." instance=ExtResource("12_3aekd")]
-position = Vector2(703, 133)
+position = Vector2(1042, 54)
 
 [node name="Shooters" type="Node" parent="."]
 
@@ -199,3 +200,7 @@ position = Vector2(775, -107)
 
 [node name="FireballShooter5" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(768, -218)
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_wd6ad")
+autoplay = true
