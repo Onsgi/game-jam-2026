@@ -1,7 +1,7 @@
 [gd_resource type="SpriteFrames" load_steps=93 format=3 uid="uid://cqnfhvw853xfw"]
 
 [ext_resource type="Texture2D" uid="uid://d25l6c3ll6854" path="res://Assets/Free 16x16 platformer asset pack/character/sprite_dash_double_jump_variation.png" id="1_oln0w"]
-[ext_resource type="Texture2D" uid="uid://bfsogh5qsdimo" path="res://Assets/Free 16x16 platformer asset pack/character/sprite_hero_double_jump_variation.png" id="2_nxpnv"]
+[ext_resource type="Texture2D" uid="uid://cn02autbc7r5k" path="res://Assets/Free 16x16 platformer asset pack/character/sprite_hero_double_jump_variation.png" id="2_nxpnv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_054vh"]
 atlas = ExtResource("1_oln0w")

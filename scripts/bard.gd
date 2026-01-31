@@ -7,7 +7,6 @@ var index := 0
 
 func _ready():
 	label.text = ""
-	connect("body_entered", Callable(self, "_on_body_entered"))
 
 func _on_body_entered(body):
 	if body.name == "Player":

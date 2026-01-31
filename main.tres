@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=19 format=3 uid="uid://c7qgwmt386soi"]
 
-[ext_resource type="Texture2D" uid="uid://dvj7rvpm6ltuo" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/world_tileset.png" id="1_5i7ek"]
+[ext_resource type="Texture2D" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/world_tileset.png" id="1_5i7ek"]
 [ext_resource type="Texture2D" uid="uid://k7paiatdeyv8" path="res://Assets/caves/mainlev_build.png" id="3_5i7ek"]
 [ext_resource type="Texture2D" uid="uid://bmdggdir2rb6y" path="res://Assets/Winter Forest Asset Kauzz/Enviroment.png" id="3_csr5i"]
 [ext_resource type="Texture2D" uid="uid://dpmdquh7vve1a" path="res://Assets/caves/props2.png" id="3_tcxlh"]
