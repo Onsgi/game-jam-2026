@@ -13,7 +13,7 @@ var highscore = 0
 var last_checkpoint_position = Vector2.ZERO
 var has_checkpoint = false
 var last_checkpoint_scene = ""
-var current_skin = "fire"
+var current_skin = "golden"
 
 var collected_masks = {
 	"fire": false,
