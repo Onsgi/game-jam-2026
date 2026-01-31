@@ -3,33 +3,21 @@ extends CanvasLayer
 @onready var scoreLabel: Label = $Hud/VBoxContainer/Score
 @onready var high_score: Label = $Hud/VBoxContainer/HighScore
 
-var score = 0
-var lives = 3
-var coins = 0
-var highscore = 0
-
 func _ready() -> void:
-	var old_score = load_from_file()
-	set_high_score(old_score)
-
-# Called when the node enters the scene tree for the first time.
-func add_coin_to_score():
-	score += 1
-	scoreLabel.text = "Coins: " + str(score) + "/24"
+	Game_config.soul_updated.connect(update_soul_label)
+	Game_config.lives_updated.connect(func(_lives): pass ) # Can add life UI update here later
 	
-func set_high_score(new_score: int):
-	if (new_score == null):
-		new_score = 0
-	high_score.text = "\nHigh score: " + str(new_score)
+	# Initial update
+	update_soul_label(Game_config.soul)
+	# Highscore is handled in Game_config but we can display it if needed, or remove.
+	# For now, let's just make sure "high_score" label is updated or hidden if irrelevant.
+	high_score.text = "" # Or remove it if souls don't really have a highscore in the same way?
+	# Assuming "high score" was for coins. Let's hide it for now or just ignore.
 
-func save_to_file():
-	if score > load_from_file():
-		var file = FileAccess.open("user://highscore.txt", FileAccess.WRITE)
-		file.store_string(str(score))
+func update_soul_label(new_soul):
+	scoreLabel.text = "Souls: " + str(new_soul)
 
-func load_from_file():
-	var file = FileAccess.open("user://highscore.txt", FileAccess.READ)
-	if file == null:
-		return 0
-	var content = int(file.get_as_text())
-	return content
+# Called by coin.gd
+func add_coin_to_score():
+	# Coins now give 1 soul? Or maybe more? Let's say 5 for now, or 1.
+	Game_config.add_soul(5)

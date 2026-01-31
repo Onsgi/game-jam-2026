@@ -1,8 +1,5 @@
 class_name Player extends CharacterBody2D
 
-@export var fireball_scene: PackedScene = preload("res://scenes/fireball.tscn")
-@export var fire_offset: Vector2 = Vector2(10, -10) # where fireball spawns
-var facing: Vector2 = Vector2.RIGHT
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
@@ -16,6 +13,8 @@ var is_dead = false
 @onready var dash: AudioStreamPlayer2D = $Dash
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var death: AudioStreamPlayer2D = $Death
+
+var heal_timer = 0.0
 
 
 func _ready():
@@ -39,13 +38,8 @@ func _physics_process(delta: float) -> void:
 		
 	if direction > 0:
 		animated_sprite_2d.flip_h = false
-		facing = Vector2.RIGHT
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
-		facing = Vector2.LEFT
-		
-	if Input.is_action_just_pressed("fire"):
-		shoot_fireball()
 	
 	if Input.is_action_just_pressed("dash"):
 		dash.play()
@@ -74,6 +68,35 @@ func _physics_process(delta: float) -> void:
 			velocity.x = direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	# Healing Logic
+	if Input.is_action_pressed("heal") and is_on_floor() and velocity.x == 0:
+		if Game_config.lives < Game_config.MAX_LIVES:
+			heal_timer += delta
+			if heal_timer > 0.0:
+				# Show charging effect (optional, e.g., faint glow)
+				animated_sprite_2d.modulate = Color(0.8, 1, 0.8) # Light green
+			
+			if heal_timer >= 1.0:
+				if Game_config.spend_soul(Game_config.HEAL_COST):
+					Game_config.heal()
+					# Visual feedback for successful heal
+					animated_sprite_2d.modulate = Color(0, 1, 0) # Full green
+					await get_tree().create_timer(0.2).timeout
+					heal_timer = 0.0 # Reset for next heal
+				else:
+					# Not enough soul, maybe sound effect?
+					heal_timer = 0.0
+					animated_sprite_2d.modulate = Color(1, 1, 1)
+		else:
+			heal_timer = 0.0
+			animated_sprite_2d.modulate = Color(1, 1, 1)
+	else:
+		heal_timer = 0.0
+		# Reset modulate unless taking damage (handled in take_damage)
+		# We need to be careful not to override damage red flash
+		if not is_dead and animated_sprite_2d.modulate != Color.RED:
+			animated_sprite_2d.modulate = Color(1, 1, 1)
 
 	move_and_slide()
 	
@@ -106,9 +129,3 @@ func take_damage():
 
 func get_is_dashing():
 	return is_dashing
-
-func shoot_fireball() -> void:
-	var fb = fireball_scene.instantiate()
-	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
-	fb.direction = facing
-	get_tree().current_scene.add_child(fb)

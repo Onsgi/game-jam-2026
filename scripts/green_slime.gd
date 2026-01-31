@@ -57,6 +57,7 @@ func _on_body_entered(body: Node2D) -> void:
 		
 		if body.get_is_dashing():
 			is_dead = true
+			Game_config.add_soul(Game_config.SOUL_GAIN)
 		else:
 			body.take_damage()
 

@@ -3,6 +3,7 @@ extends Node
 signal score_updated(new_score)
 signal lives_updated(new_lives)
 signal coins_updated(new_coins)
+signal soul_updated(new_soul)
 
 var paused = false
 var score = 0
@@ -12,11 +13,34 @@ var highscore = 0
 var last_checkpoint_position = Vector2.ZERO
 var has_checkpoint = false
 
+var soul = 0
+const MAX_SOUL = 100
+const HEAL_COST = 33
+const SOUL_GAIN = 11
+const MAX_LIVES = 3
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	highscore = load_from_file()
 	
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+func heal():
+	if lives < MAX_LIVES:
+		lives += 1
+		lives_updated.emit(lives)
+		
+func add_soul(amount):
+	soul = min(soul + amount, MAX_SOUL)
+	soul_updated.emit(soul)
+	print("Soul: ", soul)
+
+func spend_soul(amount) -> bool:
+	if soul >= amount:
+		soul -= amount
+		soul_updated.emit(soul)
+		return true
+	return false
 
 func take_damage():
 	lives -= 1

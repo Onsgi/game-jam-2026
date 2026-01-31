@@ -71,5 +71,11 @@ color = Color(0.34, 0.34, 0.34, 1)
 [node name="GreenSlime" parent="." instance=ExtResource("7_svatc")]
 position = Vector2(91, 71)
 
+[node name="GreenSlime3" parent="." instance=ExtResource("7_svatc")]
+position = Vector2(48, -27)
+
+[node name="GreenSlime2" parent="." instance=ExtResource("7_svatc")]
+position = Vector2(124.937, -23.831)
+
 [node name="Checkpoint" parent="." instance=ExtResource("8_ecr63")]
 position = Vector2(228.765, 54.1756)
