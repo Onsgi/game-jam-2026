@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c71d5smhcllkw"]
+[gd_scene load_steps=4 format=3 uid="uid://dhs723vesyv5o"]
 
 [ext_resource type="Script" uid="uid://krym2k1il0m5" path="res://scripts/portal.gd" id="1_portal"]
-[ext_resource type="Texture2D" uid="uid://cmr0xdoqulvmg" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Goblets/Goblet3 .png" id="2_1ffj6"]
+[ext_resource type="Texture2D" uid="uid://bkrh28v0usuqk" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Goblets/Goblet1 .png" id="2_1ffj6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_portal"]
 size = Vector2(11, 15)

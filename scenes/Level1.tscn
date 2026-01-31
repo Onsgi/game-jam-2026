@@ -111,8 +111,11 @@ next_scene_path = "uid://bd4m5kd2mrqjb"
 [node name="Knight" parent="." instance=ExtResource("10_4dyl1")]
 position = Vector2(552, 120)
 
+[node name="Checkpoint2" parent="." instance=ExtResource("8_ecr63")]
+position = Vector2(801, 42)
+
 [node name="Checkpoint" parent="." instance=ExtResource("8_ecr63")]
-position = Vector2(230, 57)
+position = Vector2(226, 59)
 
 [node name="Slimes" type="Node" parent="."]
 

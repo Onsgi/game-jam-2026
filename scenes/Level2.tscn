@@ -182,7 +182,7 @@ position = Vector2(919, -244)
 position = Vector2(936, -229)
 
 [node name="MaskTrigger" parent="." instance=ExtResource("12_3aekd")]
-position = Vector2(1042, 54)
+position = Vector2(816, 85)
 
 [node name="Shooters" type="Node" parent="."]
 

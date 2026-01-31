@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dc5hevhs047hl"]
 
 [ext_resource type="Script" uid="uid://cfinvswboevnw" path="res://scripts/checkpoint.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://bpafwn13fjpj0" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Ground Torches/groundtorch3.png" id="2_torch"]
+[ext_resource type="Texture2D" uid="uid://cmr0xdoqulvmg" path="res://Assets/Midevil RPG Torch Sprite with Animations - Copy/Goblets/Goblet3 .png" id="2_ywqth"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_check"]
 radius = 16.0
@@ -11,7 +11,7 @@ collision_mask = 3
 script = ExtResource("1_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_torch")
+texture = ExtResource("2_ywqth")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_check")
