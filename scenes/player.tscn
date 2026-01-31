@@ -1,11 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bt5ggbfrc51g0"]
+[gd_scene load_steps=8 format=3 uid="uid://bt5ggbfrc51g0"]
 
 [ext_resource type="SpriteFrames" uid="uid://c5lgwjb3s3hdg" path="res://frames/fire.tres" id="1_tuyoq"]
 [ext_resource type="AudioStream" uid="uid://0s0yr5kf25k7" path="res://Assets/woosh-230554.mp3" id="3_qhqgy"]
 [ext_resource type="AudioStream" uid="uid://b53t1eqhmfkk0" path="res://Assets/brackeys/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
-[ext_resource type="SpriteFrames" uid="uid://bim7bjkijcjtn" path="res://frames/golden.tres" id="5_fjrip"]
 [ext_resource type="AudioStream" uid="uid://n4f0tlmxn6ur" path="res://Assets/male-death-sound-128357.mp3" id="5_qlg0r"]
-[ext_resource type="SpriteFrames" uid="uid://cqnfhvw853xfw" path="res://frames/jumping.tres" id="6_smehm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tuyoq"]
 radius = 3.0
@@ -25,10 +23,10 @@ z_index = 1
 collision_layer = 2
 collision_mask = 5
 
-[node name="FireSkin" type="AnimatedSprite2D" parent="."]
+[node name="Skin" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = ExtResource("1_tuyoq")
-animation = &"run"
+animation = &"dash"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
@@ -49,11 +47,3 @@ volume_db = -16.847
 
 [node name="Death" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_qlg0r")
-
-[node name="GoldenSkin" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("5_fjrip")
-animation = &"dash"
-
-[node name="JumpingSkin" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("6_smehm")
-animation = &"dash"
