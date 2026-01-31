@@ -20,7 +20,7 @@ var is_dead = false
 var heal_timer = 0.0
 
 func _ready():
-	if Game_config.has_checkpoint:
+	if Game_config.has_checkpoint and Game_config.last_checkpoint_scene == get_tree().current_scene.scene_file_path:
 		global_position = Game_config.last_checkpoint_position
 
 func _physics_process(delta: float) -> void:

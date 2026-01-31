@@ -12,8 +12,8 @@ var bus_index3: int
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	bus_index = AudioServer.get_bus_index("Master")
-	bus_index2 = AudioServer.get_bus_index("Sfx")
-	bus_index3 = AudioServer.get_bus_index("Music")
+	bus_index2 = AudioServer.get_bus_index("sfx")
+	bus_index3 = AudioServer.get_bus_index("music")
 	highscore.text = "Highscore: %d" % Game_config.highscore
 	volume_slider.value = Game_config.load_master_vol()
 	#print(volume_slider.value)

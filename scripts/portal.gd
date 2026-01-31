@@ -1,6 +1,6 @@
 extends Area2D
 
-@export_file("*.tscn") var next_scene_path: String = ""
+@export_file("*.tscn") var next_scene_path: String = "res://scenes/Level2.tscn"
 
 func _on_body_entered(body):
 	if body is Player:
