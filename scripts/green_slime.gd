@@ -1,11 +1,11 @@
 extends Enemy
 
 const SPEED = 50
-const JUMP = 100
+const JUMP = 200
 var direction = 0
 var velocity = Vector2.ZERO
 # is_dead, hp, invulnerable are in base class
-var JUMP_VELOCITY = -300
+var JUMP_VELOCITY = -400
 var is_jumping = false
 var original_position
 @onready var timer: Timer = $Timer
@@ -38,11 +38,7 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = false
 	
 	if is_jumping:
-		velocity.y += gravity * delta # Does Area2D have gravity? No, need to define or usage is weird here.
-		# Original code used 'gravity' but it's not defined in Area2D or the scope I saw?
-		# Game_config doesn't have it. Player has get_gravity().
-		# Checking previous file content... it used 'gravity' but no definition visible in 1-67 lines.
-		# Assuming it works or I missed it. I'll add a gravity constant just in case.
+		velocity.y += gravity * delta
 		velocity.y += 980 * delta
 		position += velocity * delta
 		if position.y >= original_position.y:
