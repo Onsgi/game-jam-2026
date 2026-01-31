@@ -1,5 +1,8 @@
 class_name Player extends CharacterBody2D
 
+@export var fireball_scene: PackedScene = preload("res://scenes/fireball.tscn")
+@export var fire_offset: Vector2 = Vector2(10, -10) # where fireball spawns
+var facing: Vector2 = Vector2.RIGHT
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
@@ -36,8 +39,13 @@ func _physics_process(delta: float) -> void:
 		
 	if direction > 0:
 		animated_sprite_2d.flip_h = false
+		facing = Vector2.RIGHT
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
+		facing = Vector2.LEFT
+		
+	if Input.is_action_just_pressed("fire"):
+		shoot_fireball()
 	
 	if Input.is_action_just_pressed("dash"):
 		dash.play()
@@ -98,3 +106,9 @@ func take_damage():
 
 func get_is_dashing():
 	return is_dashing
+
+func shoot_fireball() -> void:
+	var fb = fireball_scene.instantiate()
+	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
+	fb.direction = facing
+	get_tree().current_scene.add_child(fb)
