@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnopl827x20ay"
-path="res://.godot/imported/Boss_Mask_Double_Jump_Dropped.png-3d81ddb8afad01bd77653f3d19f38620.ctex"
+uid="uid://dpc1yevvgswue"
+path="res://.godot/imported/boss_mask_double_jump_pick_up.png-0160f1c39468bd7024845138dbf151ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/Mask_Pick_Up/Boss_Mask_Double_Jump_Dropped.png"
-dest_files=["res://.godot/imported/Boss_Mask_Double_Jump_Dropped.png-3d81ddb8afad01bd77653f3d19f38620.ctex"]
+source_file="res://Assets/background/Mask_Pick_Up/boss_mask_double_jump_pick_up.png"
+dest_files=["res://.godot/imported/boss_mask_double_jump_pick_up.png-0160f1c39468bd7024845138dbf151ee.ctex"]
 
 [params]
 
