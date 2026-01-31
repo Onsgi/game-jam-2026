@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://i4cmyxsbih01" path="res://scenes/torch.tscn" id="7_2meft"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
-[ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_n34uq"]
+[ext_resource type="PackedScene" uid="uid://dhs723vesyv5o" path="res://scenes/portal.tscn" id="9_n34uq"]
 [ext_resource type="PackedScene" path="res://scenes/knight.tscn" id="10_4dyl1"]
 [ext_resource type="PackedScene" path="res://scenes/purple_slime.tscn" id="10_kbo48"]
 [ext_resource type="PackedScene" uid="uid://dtbjp50ehmj3i" path="res://scenes/cutscene1.tscn" id="12_jxjwb"]

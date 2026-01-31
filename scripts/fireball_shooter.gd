@@ -10,6 +10,7 @@ var is_dead: bool = false
 var invulnerable: bool = false
 
 func _ready() -> void:
+	add_to_group("enemy")
 	$Timer.wait_time = fire_rate
 	$Timer.timeout.connect(_shoot_fireball)
 
@@ -27,10 +28,11 @@ func _shoot_fireball() -> void:
 		return
 
 	# Only shoot if player is within 1000 pixels
-	if global_position.distance_to(player.global_position) > 300:
+	if global_position.distance_to(player.global_position) > 200:
 		return
 
 	var fb = fireball_scene.instantiate()
+	fb.shooter = self
 	fb.position = $ShootPoint.global_position
 	fb.direction = facing
 
@@ -40,11 +42,11 @@ func _shoot_fireball() -> void:
 	get_tree().current_scene.add_child(fb)
 
 
-func take_damage(amount: int = 1) -> void:
+func take_damage() -> void:
 	if is_dead or invulnerable:
 		return
 	
-	hp -= amount
+	hp -= 1
 	if hp <= 0:
 		die()
 	else:
@@ -72,6 +74,6 @@ func die() -> void:
 func _on_hurtbox_body_entered(body: Node2D) -> void:
 	if body is Player:
 		if body.get_is_dashing():
-			take_damage(1)
+			take_damage()
 		else:
 			body.take_damage()

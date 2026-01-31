@@ -1,7 +1,7 @@
 class_name Player extends CharacterBody2D
 
 @export var fireball_scene: PackedScene = preload("res://scenes/fireball.tscn")
-@export var fire_offset: Vector2 = Vector2(10, -10) # where fireball spawns
+@export var fire_offset: Vector2 = Vector2(5, -10) # where fireball spawns
 var facing: Vector2 = Vector2.RIGHT
 
 const SPEED = 150.0

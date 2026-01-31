@@ -10,6 +10,7 @@ size = Vector2(16, 15)
 size = Vector2(16, 16)
 
 [node name="IceCube" type="RigidBody2D"]
+collision_layer = 3
 script = ExtResource("1_mqgh4")
 
 [node name="Area2D" type="Area2D" parent="."]

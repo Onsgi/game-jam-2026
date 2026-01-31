@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://i4cmyxsbih01" path="res://scenes/torch.tscn" id="7_khw7m"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
-[ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_portal"]
+[ext_resource type="PackedScene" uid="uid://dhs723vesyv5o" path="res://scenes/portal.tscn" id="9_portal"]
 [ext_resource type="PackedScene" uid="uid://12pwn2y47o2n" path="res://scenes/ice_cube.tscn" id="10_v8268"]
 [ext_resource type="PackedScene" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
 [ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="14_wd6ad"]
@@ -104,7 +104,7 @@ position = Vector2(1028, -197)
 position = Vector2(91, 71)
 
 [node name="Checkpoint" parent="." instance=ExtResource("8_ecr63")]
-position = Vector2(1005, 58)
+position = Vector2(1028, 60)
 
 [node name="Portal" parent="." instance=ExtResource("9_portal")]
 position = Vector2(1331, -293)
