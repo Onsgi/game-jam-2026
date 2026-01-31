@@ -7,12 +7,14 @@ extends Area2D
 var cutscene_text := "You finally arrived... I've been waiting."
 var text_speed := 0.04
 var cutscene_duration := 5.0
+var cutscene_played := false
 
 func _ready():
 	connect("body_entered", Callable(self, "_on_body_entered"))
 
 func _on_body_entered(body):
-	if body.is_in_group("player"):
+	if body.is_in_group("player") and not cutscene_played:
+		cutscene_played = true
 		start_cutscene(body)
 		
 func start_cutscene(player):
