@@ -7,15 +7,17 @@ var elapsed: float = 0.0
 var start_scale: Vector2
 
 func _ready() -> void:
+	add_to_group("icecube")
 	start_scale = scale
-	$Area2D.body_entered.connect(_on_body_entered)
+	$Area2D.area_entered.connect(_on_area_entered)
 
 
-func _on_body_entered(body: Node) -> void:
+func _on_area_entered(area: Area2D) -> void:
 	if melting:
 		return
 
-	if body.is_in_group("fireball"):
+	if area.is_in_group("fireball"):
+		print("1")
 		start_melting()
 
 
