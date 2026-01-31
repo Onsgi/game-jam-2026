@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://portal456"]
+
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_portal"]
+[ext_resource type="Texture2D" uid="uid://ctek8x215351" path="res://Assets/Free 16x16 platformer asset pack/sprites/sprite_teleporter.png" id="2_sprite"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_portal"]
+size = Vector2(32, 48)
+
+[node name="Portal" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_portal")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_portal")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

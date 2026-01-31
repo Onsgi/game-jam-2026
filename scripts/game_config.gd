@@ -12,6 +12,7 @@ var coins = 0
 var highscore = 0
 var last_checkpoint_position = Vector2.ZERO
 var has_checkpoint = false
+var last_checkpoint_scene = ""
 
 var soul = 0
 const MAX_SOUL = 100
@@ -24,6 +25,14 @@ func _ready() -> void:
 	highscore = load_from_file()
 	
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+func respawn_player():
+	reset_game()
+	if has_checkpoint and last_checkpoint_scene != "":
+		get_tree().change_scene_to_file(last_checkpoint_scene)
+	else:
+		get_tree().reload_current_scene()
+
 
 func heal():
 	if lives < MAX_LIVES:

@@ -7,6 +7,7 @@ func _on_body_entered(body):
 	if body is Player and not activated:
 		activated = true
 		Game_config.last_checkpoint_position = global_position
+		Game_config.last_checkpoint_scene = get_tree().current_scene.scene_file_path
 		Game_config.has_checkpoint = true
 		print("Checkpoint activated at: ", global_position)
 		if sprite:

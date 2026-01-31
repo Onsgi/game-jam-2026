@@ -118,8 +118,7 @@ func take_damage():
 		# For simply matching request:
 		get_tree().create_timer(1.0).timeout.connect(func():
 			Engine.time_scale = 1.0
-			Game_config.reset_game()
-			get_tree().reload_current_scene()
+			Game_config.respawn_player()
 		)
 	else:
 		# Visual feedback for damage
