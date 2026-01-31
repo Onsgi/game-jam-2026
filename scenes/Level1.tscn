@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://8p8rhijlqa4g"]
+[gd_scene load_steps=12 format=4 uid="uid://8p8rhijlqa4g"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cg40brlg5c61i" path="res://scripts/ui.gd" id="5_kbo48"]
 [ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="6_4dyl1"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
+[ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -69,3 +70,6 @@ color = Color(0.34, 0.34, 0.34, 1)
 
 [node name="GreenSlime" parent="." instance=ExtResource("7_svatc")]
 position = Vector2(91, 71)
+
+[node name="Checkpoint" parent="." instance=ExtResource("8_ecr63")]
+position = Vector2(228.765, 54.1756)

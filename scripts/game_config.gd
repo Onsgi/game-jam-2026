@@ -9,6 +9,8 @@ var score = 0
 var lives = 3
 var coins = 0
 var highscore = 0
+var last_checkpoint_position = Vector2.ZERO
+var has_checkpoint = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

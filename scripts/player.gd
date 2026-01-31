@@ -15,6 +15,10 @@ var is_dead = false
 @onready var death: AudioStreamPlayer2D = $Death
 
 
+func _ready():
+	if Game_config.has_checkpoint:
+		global_position = Game_config.last_checkpoint_position
+
 func _physics_process(delta: float) -> void:
 	if is_dead:
 		animated_sprite_2d.play("death")
