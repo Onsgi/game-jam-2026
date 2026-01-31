@@ -86,8 +86,8 @@ position = Vector2(297, -229)
 [node name="Knight2" parent="." instance=ExtResource("10_ddxw6")]
 position = Vector2(1249, 291)
 
+[node name="CultistBoss" parent="." instance=ExtResource("10_iw2mh")]
+position = Vector2(2020, 284)
+
 [node name="Checkpoint2" parent="." instance=ExtResource("8_v36no")]
 position = Vector2(1979, -103)
-
-[node name="CultistBoss" parent="Checkpoint2" instance=ExtResource("10_iw2mh")]
-position = Vector2(41, 387)

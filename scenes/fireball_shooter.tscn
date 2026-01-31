@@ -1,48 +1,28 @@
-[gd_scene load_steps=16 format=3 uid="uid://dgtqdnm0x4gy3"]
+[gd_scene load_steps=11 format=3 uid="uid://dgtqdnm0x4gy3"]
 
 [ext_resource type="Script" uid="uid://dgfbedp345ktq" path="res://scripts/fireball_shooter.gd" id="1_7ubwt"]
-[ext_resource type="Texture2D" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/Cultist.png" id="2_7ubwt"]
+[ext_resource type="Texture2D" uid="uid://cwgsqx3s6xgxw" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/cultist_plague_doctor.png" id="2_7ubwt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iu8yy"]
 size = Vector2(20, 30)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mrgm4"]
 atlas = ExtResource("2_7ubwt")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(32, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kpev1"]
 atlas = ExtResource("2_7ubwt")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(64, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bbq5g"]
 atlas = ExtResource("2_7ubwt")
-region = Rect2(0, 32, 32, 32)
+region = Rect2(96, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bbj16"]
 atlas = ExtResource("2_7ubwt")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_01srj"]
-atlas = ExtResource("2_7ubwt")
-region = Rect2(0, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yggfg"]
-atlas = ExtResource("2_7ubwt")
-region = Rect2(32, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lakpn"]
-atlas = ExtResource("2_7ubwt")
-region = Rect2(64, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j2nph"]
-atlas = ExtResource("2_7ubwt")
-region = Rect2(96, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m4qqd"]
-atlas = ExtResource("2_7ubwt")
 region = Rect2(128, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tjbh5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_01srj"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(160, 128, 32, 32)
 
@@ -63,21 +43,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_01srj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yggfg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lakpn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j2nph")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m4qqd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tjbh5")
 }],
 "loop": true,
 "name": &"idle",

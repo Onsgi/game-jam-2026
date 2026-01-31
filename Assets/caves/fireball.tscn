@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://cjkqflv2gsyp3"]
+
+[ext_resource type="Script" uid="uid://dcs06xtahal3c" path="res://scripts/fireball.gd" id="1_t4tkv"]
+[ext_resource type="Texture2D" uid="uid://bfdg6y8c1uso6" path="res://Assets/fb_animation_1.png" id="2_ays2m"]
+[ext_resource type="AudioStream" uid="uid://dpm3rl1o1xmgk" path="res://Assets/fireball_sound.mp3" id="3_gk604"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3s14c"]
+radius = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gl40"]
+atlas = ExtResource("2_ays2m")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cb14k"]
+atlas = ExtResource("2_ays2m")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kba2"]
+atlas = ExtResource("2_ays2m")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43lgj"]
+atlas = ExtResource("2_ays2m")
+region = Rect2(96, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqoxj"]
+atlas = ExtResource("2_ays2m")
+region = Rect2(128, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_86oub"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gl40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cb14k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kba2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43lgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqoxj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_21l5o"]
+offsets = PackedFloat32Array(0, 0.547368)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cb14k"]
+gradient = SubResource("Gradient_21l5o")
+fill = 1
+fill_from = Vector2(0.457265, 0.517094)
+
+[node name="Fireball" type="Area2D"]
+collision_layer = 2
+collision_mask = 6
+script = ExtResource("1_t4tkv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -1)
+shape = SubResource("CircleShape2D_3s14c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.867823, 0.924424)
+sprite_frames = SubResource("SpriteFrames_86oub")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(4, 0)
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gk604")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(4, -1)
+scale = Vector2(4.4502, 2.89063)
+energy = 0.9
+texture = SubResource("GradientTexture2D_cb14k")
