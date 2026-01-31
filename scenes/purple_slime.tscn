@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://d1ectyb4wjfnr"]
+[gd_scene load_steps=17 format=3 uid="uid://rj30u5c5icol"]
 
-[ext_resource type="Texture2D" uid="uid://db5ryvyib322a" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/slime_purple.png" id="1_bln8p"]
-[ext_resource type="Script" uid="uid://knhq23bwsybt" path="res://scripts/purple_slime.gd" id="1_tuic5"]
+[ext_resource type="Texture2D" uid="uid://db5ryvyib322a" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/slime_purple.png" id="1_bln8p"]
+[ext_resource type="Script" path="res://scripts/purple_slime.gd" id="1_tuic5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuic5"]
 atlas = ExtResource("1_bln8p")
