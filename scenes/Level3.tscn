@@ -26,7 +26,7 @@ shader_parameter/speed = Vector2(0.03, 0.02)
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_g7sqe")]
-position = Vector2(-7.53547, -3.9374)
+position = Vector2(-22, -7)
 script = ExtResource("2_turoa")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -52,10 +52,10 @@ scroll_ignore_camera_zoom = true
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
 material = SubResource("ShaderMaterial_muem4")
-offset_left = -2421.0
-offset_top = -1401.0
-offset_right = 2789.0
-offset_bottom = 1794.0
+offset_left = -2411.0
+offset_top = -1408.0
+offset_right = 2799.0
+offset_bottom = 1787.0
 metadata/_edit_use_anchors_ = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]

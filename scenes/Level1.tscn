@@ -8,9 +8,9 @@
 [ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="6_4dyl1"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
-[ext_resource type="PackedScene" path="res://scenes/portal.tscn" id="9_n34uq"]
-[ext_resource type="PackedScene" path="res://scenes/knight.tscn" id="10_4dyl1"]
-[ext_resource type="PackedScene" path="res://scenes/purple_slime.tscn" id="10_kbo48"]
+[ext_resource type="PackedScene" uid="uid://c71d5smhcllkw" path="res://scenes/portal.tscn" id="9_n34uq"]
+[ext_resource type="PackedScene" uid="uid://c81fkr1emjbi5" path="res://scenes/knight.tscn" id="10_4dyl1"]
+[ext_resource type="PackedScene" uid="uid://d1ectyb4wjfnr" path="res://scenes/purple_slime.tscn" id="10_kbo48"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075

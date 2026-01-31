@@ -14,7 +14,6 @@ var dash_timer = 1.0
 var is_dead = false
 var max_jumps := 2
 var jumps_left := 2
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var dash: AudioStreamPlayer2D = $Dash
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var death: AudioStreamPlayer2D = $Death
@@ -27,14 +26,18 @@ var current_skin: AnimatedSprite2D
 var heal_timer = 0.0
 
 func _ready():
+	fire_skin.visible = true
+	golden_skin.visible = false
+	jumping_skin.visible = false
 	current_skin = fire_skin
+	
 	add_to_group("player")
 	if Game_config.has_checkpoint and Game_config.last_checkpoint_scene == get_tree().current_scene.scene_file_path:
 		global_position = Game_config.last_checkpoint_position
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
-		animated_sprite_2d.play("death")
+		current_skin.play("death")
 		return
 	# Add the gravity.
 	if not is_on_floor():
@@ -57,10 +60,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("move_left", "move_right")
 		
 	if direction > 0:
-		animated_sprite_2d.flip_h = false
+		current_skin.flip_h = false
 		facing = Vector2.RIGHT
 	elif direction < 0:
-		animated_sprite_2d.flip_h = true
+		current_skin.flip_h = true
 		facing = Vector2.LEFT
 		
 	if Input.is_action_just_pressed("fire"):
@@ -72,11 +75,11 @@ func _physics_process(delta: float) -> void:
 		if direction != 0:
 			dash_direction = direction
 		else:
-			dash_direction = -1 if animated_sprite_2d.flip_h else 1
+			dash_direction = -1 if current_skin.flip_h else 1
 		dash_timer = dash_time
 		
 	if is_dashing:
-		animated_sprite_2d.play("dash")
+		current_skin.play("dash")
 		velocity.x = dash_direction * dash_speed
 		# Disable collision with enemies (Layer 3, Value 4)
 		set_collision_mask_value(3, false)
@@ -89,11 +92,11 @@ func _physics_process(delta: float) -> void:
 		set_collision_mask_value(3, true) # Ensure it's reset
 		if is_on_floor():
 			if direction == 0:
-				animated_sprite_2d.play("idle")
+				current_skin.play("idle")
 			else:
-				animated_sprite_2d.play("run")
+				current_skin.play("run")
 		else:
-			animated_sprite_2d.play("jump")
+			current_skin.play("jump")
 		if direction:
 			velocity.x = direction * SPEED
 		else:
@@ -105,28 +108,28 @@ func _physics_process(delta: float) -> void:
 			heal_timer += delta
 			if heal_timer > 0.0:
 				# Show charging effect (optional, e.g., faint glow)
-				animated_sprite_2d.modulate = Color(0.8, 1, 0.8) # Light green
+				current_skin.modulate = Color(0.8, 1, 0.8) # Light green
 			
 			if heal_timer >= 1.0:
 				if Game_config.spend_soul(Game_config.HEAL_COST):
 					Game_config.heal()
 					# Visual feedback for successful heal
-					animated_sprite_2d.modulate = Color(0, 1, 0) # Full green
+					current_skin.modulate = Color(0, 1, 0) # Full green
 					await get_tree().create_timer(0.2).timeout
 					heal_timer = 0.0 # Reset for next heal
 				else:
 					# Not enough soul, maybe sound effect?
 					heal_timer = 0.0
-					animated_sprite_2d.modulate = Color(1, 1, 1)
+					current_skin.modulate = Color(1, 1, 1)
 		else:
 			heal_timer = 0.0
-			animated_sprite_2d.modulate = Color(1, 1, 1)
+			current_skin.modulate = Color(1, 1, 1)
 	else:
 		heal_timer = 0.0
 		# Reset modulate unless taking damage (handled in take_damage)
 		# We need to be careful not to override damage red flash
-		if not is_dead and animated_sprite_2d.modulate != Color.RED:
-			animated_sprite_2d.modulate = Color(1, 1, 1)
+		if not is_dead and current_skin.modulate != Color.RED:
+			current_skin.modulate = Color(1, 1, 1)
 
 
 	move_and_slide()
@@ -153,9 +156,9 @@ func take_damage():
 		)
 	else:
 		# Visual feedback for damage
-		animated_sprite_2d.modulate = Color.RED
+		current_skin.modulate = Color.RED
 		await get_tree().create_timer(0.2).timeout
-		animated_sprite_2d.modulate = Color.WHITE
+		current_skin.modulate = Color.WHITE
 
 func get_is_dashing():
 	return is_dashing

@@ -28,7 +28,7 @@ collision_mask = 5
 [node name="FireSkin" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = ExtResource("1_tuyoq")
-animation = &"dash"
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
