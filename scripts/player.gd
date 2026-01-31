@@ -3,7 +3,7 @@ class_name Player extends CharacterBody2D
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
-var dash_speed = 300
+var dash_speed = 200
 var dash_time = 0.2
 var dash_direction = Vector2.ZERO
 var is_dashing = false
@@ -16,7 +16,6 @@ var is_dead = false
 
 
 func _physics_process(delta: float) -> void:
-
 	if is_dead:
 		animated_sprite_2d.play("death")
 		return
@@ -36,10 +35,13 @@ func _physics_process(delta: float) -> void:
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
 	
-	if Input.is_action_just_pressed("dash") and direction != 0:
+	if Input.is_action_just_pressed("dash"):
 		dash.play()
 		is_dashing = true
-		dash_direction = direction
+		if direction != 0:
+			dash_direction = direction
+		else:
+			dash_direction = -1 if animated_sprite_2d.flip_h else 1
 		dash_timer = dash_time
 		
 	if is_dashing:
