@@ -23,7 +23,6 @@ func take_damage():
 	if lives == 0:
 		if score > highscore:
 			save_to_file(score)
-		reset_game()
 
 func add_score(amount):
 	score += amount

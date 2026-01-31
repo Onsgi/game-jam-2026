@@ -68,8 +68,29 @@ func _physics_process(delta: float) -> void:
 func set_death():
 	death.play()
 	is_dead = true
+	
 func get_death():
 	return is_dead
+
+func take_damage():
+	Game_config.take_damage()
+	if Game_config.lives <= 0:
+		set_death()
+		Engine.time_scale = 0.5
+		# We might want to trigger the reload timer here or key off an animation
+		# For now, let's trust Game_config's signal or handle it elsewhere if needed.
+		# But since original code did reload in slime, we might need a manager or timer.
+		# For simply matching request:
+		get_tree().create_timer(1.0).timeout.connect(func():
+			Engine.time_scale = 1.0
+			Game_config.reset_game()
+			get_tree().reload_current_scene()
+		)
+	else:
+		# Visual feedback for damage
+		animated_sprite_2d.modulate = Color.RED
+		await get_tree().create_timer(0.2).timeout
+		animated_sprite_2d.modulate = Color.WHITE
 
 func get_is_dashing():
 	return is_dashing

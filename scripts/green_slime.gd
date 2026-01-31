@@ -58,11 +58,8 @@ func _on_body_entered(body: Node2D) -> void:
 		if body.get_is_dashing():
 			is_dead = true
 		else:
-			body.set_death()
-			Engine.time_scale = 0.5
-			timer.start()
+			body.take_damage()
 
 
 func _on_timer_timeout() -> void:
-	get_tree().reload_current_scene()
-	Engine.time_scale = 1.0
+	pass
