@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfyk3u4idwo8g"
-path="res://.godot/imported/LizardfolkScout.png-178fbda943ea492f0a80ab9fda6d8604.ctex"
+uid="uid://bbj8v3bsrbilm"
+path="res://.godot/imported/Cultist.png-9629435b135495adea42df96b7b24631.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/basic asset pack/Basic Asset Pack/Basic Humanoid Animations/lizardfolk scout/LizardfolkScout.png"
-dest_files=["res://.godot/imported/LizardfolkScout.png-178fbda943ea492f0a80ab9fda6d8604.ctex"]
+source_file="res://Assets/brackeys/brackeys_platformer_assets/sprites/Cultist.png"
+dest_files=["res://.godot/imported/Cultist.png-9629435b135495adea42df96b7b24631.ctex"]
 
 [params]
 
