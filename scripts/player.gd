@@ -18,11 +18,16 @@ var jumps_left := 2
 @onready var dash: AudioStreamPlayer2D = $Dash
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var death: AudioStreamPlayer2D = $Death
+@onready var fire_skin: AnimatedSprite2D = $FireSkin
+@onready var golden_skin: AnimatedSprite2D = $GoldenSkin
+@onready var jumping_skin: AnimatedSprite2D = $JumpingSkin
+var current_skin: AnimatedSprite2D
 @export var enable_double_jump := true
 
 var heal_timer = 0.0
 
 func _ready():
+	current_skin = fire_skin
 	add_to_group("player")
 	if Game_config.has_checkpoint and Game_config.last_checkpoint_scene == get_tree().current_scene.scene_file_path:
 		global_position = Game_config.last_checkpoint_position
@@ -160,3 +165,8 @@ func shoot_fireball() -> void:
 	fb.position = global_position + Vector2(fire_offset.x * facing.x, fire_offset.y)
 	fb.direction = facing
 	get_tree().current_scene.add_child(fb)
+
+func switch_skin(new_skin: AnimatedSprite2D):
+	current_skin.visible = false
+	current_skin = new_skin
+	current_skin.visible = true
