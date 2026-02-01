@@ -1,15 +1,13 @@
-[gd_scene load_steps=24 format=4 uid="uid://8p8rhijlqa4g"]
+[gd_scene load_steps=22 format=4 uid="uid://8p8rhijlqa4g"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
-[ext_resource type="Texture2D" uid="uid://2c8mt2uwy0xc" path="res://Assets/Winter Forest Asset Kauzz/Background 1.png" id="2_t46sy"]
 [ext_resource type="TileSet" uid="uid://c7qgwmt386soi" path="res://main.tres" id="3_ecr63"]
 [ext_resource type="PackedScene" uid="uid://bwbxd80v4y3t4" path="res://scenes/mask_trigger.tscn" id="4_av1gt"]
 [ext_resource type="PackedScene" uid="uid://bqrh5u2recb8r" path="res://scenes/ui.tscn" id="4_n34uq"]
 [ext_resource type="Script" uid="uid://cg40brlg5c61i" path="res://scripts/ui.gd" id="5_kbo48"]
 [ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="6_4dyl1"]
 [ext_resource type="PackedScene" uid="uid://i4cmyxsbih01" path="res://scenes/torch.tscn" id="7_2meft"]
-[ext_resource type="Texture2D" uid="uid://csf5qh54jkdqw" path="res://Assets/mainmenu.png" id="7_i2gr7"]
 [ext_resource type="PackedScene" uid="uid://buwqvgpn5goji" path="res://scenes/green_slime.tscn" id="7_svatc"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
 [ext_resource type="PackedScene" uid="uid://dhs723vesyv5o" path="res://scenes/portal.tscn" id="9_n34uq"]
@@ -46,13 +44,11 @@ z_index = -20
 z_as_relative = false
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/1"]
-texture = ExtResource("7_i2gr7")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
 rotation = -0.00432639
-texture = ExtResource("2_t46sy")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 layer = 11
