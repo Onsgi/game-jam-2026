@@ -167,3 +167,80 @@ autoplay = true
 
 [node name="Bard2" parent="." instance=ExtResource("18_2ouud")]
 position = Vector2(1375, 265)
+<<<<<<< Updated upstream
+=======
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+z_index = -20
+texture_repeat = 2
+scroll_scale = Vector2(0.3, 0.9)
+repeat_size = Vector2(2, 0)
+repeat_times = 4
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+z_index = -10
+position = Vector2(600, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("19_t46sy")
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 100)
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+z_index = -10
+scroll_scale = Vector2(0.6, 1)
+repeat_size = Vector2(300, 0)
+repeat_times = 6
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+z_index = -10
+position = Vector2(600, 250)
+texture = ExtResource("20_thv4y")
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 600)
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+z_index = -5
+scroll_scale = Vector2(1, 0.9)
+repeat_size = Vector2(300, 0)
+repeat_times = 10
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(0, -20)
+texture = ExtResource("21_thv4y")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+texture_repeat = 1
+scale = Vector2(0.996483, 1.00477)
+scroll_scale = Vector2(0.5, 1)
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(900, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+z_index = -10
+texture_repeat = 2
+position = Vector2(253.893, 16.9194)
+scale = Vector2(0.724274, 2.29637)
+texture = ExtResource("22_u4kti")
+region_enabled = true
+region_rect = Rect2(0, 0, 1600, 200)
+
+[node name="Parallax2D5" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.5, 1)
+limit_begin = Vector2(1000, 0)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+z_index = -10
+texture_repeat = 2
+position = Vector2(1200, 200)
+scale = Vector2(0.815618, 1.00792)
+texture = ExtResource("22_u4kti")
+region_enabled = true
+region_rect = Rect2(0, 0, 500, 200)
+>>>>>>> Stashed changes
