@@ -30,12 +30,14 @@ func start_melting() -> void:
 
 	$CollisionShape2D.set_deferred("disabled", true)
 
+	# Wake rigid bodies touching this one
 	for body in $Area2D.get_overlapping_bodies():
 		if body is RigidBody2D:
 			body.sleeping = false
 
-	# Allow gravity again
-	freeze = false
+	# Unfreeze safely AFTER physics step
+	call_deferred("_unfreeze")
+
 
 
 func _process(delta: float) -> void:
@@ -56,3 +58,6 @@ func _process(delta: float) -> void:
 
 	if t >= 1.0:
 		queue_free()
+
+func _unfreeze():
+	freeze = false
