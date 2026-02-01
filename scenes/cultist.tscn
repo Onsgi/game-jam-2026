@@ -1,8 +1,8 @@
-[gd_scene load_steps=33 format=3 uid="uid://c5ml17qebbfql"]
+[gd_scene load_steps=33 format=3 uid="uid://cdi0hyy3635nd"]
 
-[ext_resource type="Script" uid="uid://yryra8rio3h5" path="res://scripts/cultist.gd" id="1_cultist"]
+[ext_resource type="Script" path="res://scripts/cultist.gd" id="1_cultist"]
 [ext_resource type="Texture2D" uid="uid://drauaeqlqachq" path="res://Assets/AnimationSheet_Character.png" id="2_ag0xj"]
-[ext_resource type="Texture2D" path="res://Assets/brackeys/brackeys_platformer_assets/sprites/Cultist.png" id="2_sprite"]
+[ext_resource type="Texture2D" uid="uid://bhwt6y1d4b2v" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/cultist_black_variation.png" id="3_ag0xj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4o0s8"]
 atlas = ExtResource("2_ag0xj")
@@ -68,12 +68,12 @@ region = Rect2(192, 224, 32, 32)
 atlas = ExtResource("2_ag0xj")
 region = Rect2(224, 224, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_idle1"]
-atlas = ExtResource("2_sprite")
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmrom"]
+atlas = ExtResource("3_ag0xj")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_idle2"]
-atlas = ExtResource("2_sprite")
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbgki"]
+atlas = ExtResource("3_ag0xj")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h54gi"]
@@ -170,10 +170,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_idle1")
+"texture": SubResource("AtlasTexture_pmrom")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_idle2")
+"texture": SubResource("AtlasTexture_bbgki")
 }],
 "loop": true,
 "name": &"idle",
@@ -222,7 +222,7 @@ script = ExtResource("1_cultist")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cultist")
-animation = &"death"
+animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
