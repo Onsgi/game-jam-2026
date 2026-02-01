@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bt5ggbfrc51g0"]
+[gd_scene load_steps=9 format=3 uid="uid://bt5ggbfrc51g0"]
 
+[ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="1_qlg0r"]
 [ext_resource type="AudioStream" uid="uid://0s0yr5kf25k7" path="res://Assets/woosh-230554.mp3" id="3_qhqgy"]
 [ext_resource type="AudioStream" uid="uid://b53t1eqhmfkk0" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sounds/jump.wav" id="4_dqkch"]
 [ext_resource type="SpriteFrames" uid="uid://bim7bjkijcjtn" path="res://frames/golden.tres" id="5_fjrip"]
@@ -22,6 +23,7 @@ fill_from = Vector2(0.457265, 0.517094)
 z_index = 1
 collision_layer = 2
 collision_mask = 5
+script = ExtResource("1_qlg0r")
 
 [node name="Skin" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
