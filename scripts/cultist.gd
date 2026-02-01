@@ -22,6 +22,7 @@ var direction = 1 # 1 for right, -1 for left
 @onready var attack_area = $AttackArea
 
 func _ready():
+	add_to_group("enemy")
 	print("Cultist Ready")
 
 func _physics_process(delta: float) -> void:

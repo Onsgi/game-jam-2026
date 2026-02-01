@@ -38,7 +38,10 @@ func _on_hit(body: Node) -> void:
 		return
 
 	if body.is_in_group("player") or body.is_in_group("enemy"):
-		body.take_damage()
+		body.take_damage(1)
+		explode()
+	else:
+		# Hit a wall or something else
 		explode()
 
 func _on_area_hit(area: Area2D) -> void:

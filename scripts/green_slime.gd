@@ -17,6 +17,7 @@ var original_position
 
 
 func _ready():
+	add_to_group("enemy")
 	original_position = position
 	soul_reward = 11 # Set specific soul reward
 	hp = 3 # Set specific HP

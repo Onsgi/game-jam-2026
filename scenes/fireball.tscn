@@ -61,7 +61,7 @@ fill_from = Vector2(0.457265, 0.517094)
 
 [node name="Fireball" type="Area2D"]
 collision_layer = 2
-collision_mask = 6
+collision_mask = 7
 script = ExtResource("1_3s14c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

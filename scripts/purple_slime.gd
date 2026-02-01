@@ -6,9 +6,11 @@ var direction = 0
 @onready var ray_cast_right: RayCast2D = $RayCastRight
 @onready var ray_cast_left: RayCast2D = $RayCastLeft
 
+func _ready():
+	add_to_group("enemy")
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
 	if is_dead:
 		if not $AnimatedSprite2D.is_playing():
 			if $AnimatedSprite2D.animation_finished and $AnimatedSprite2D.animation == "death":
@@ -28,7 +30,6 @@ func _process(delta: float) -> void:
 	$AnimatedSprite2D.play("idle")
 	
 	
-
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player:
 		if body.get_death():
