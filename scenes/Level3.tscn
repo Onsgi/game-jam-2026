@@ -5,11 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://bqrh5u2recb8r" path="res://scenes/ui.tscn" id="4_t3dp5"]
 [ext_resource type="Script" uid="uid://cg40brlg5c61i" path="res://scripts/ui.gd" id="5_kid5y"]
 [ext_resource type="Shader" uid="uid://c2lx1jadtxqsm" path="res://shaders/main.gdshader" id="6_qtcjj"]
-[ext_resource type="PackedScene" uid="uid://cdi0hyy3635nd" path="res://scenes/cultist.tscn" id="8_kpqvn"]
+[ext_resource type="PackedScene" uid="uid://c5ml17qebbfql" path="res://scenes/cultist.tscn" id="8_kpqvn"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_v36no"]
 [ext_resource type="PackedScene" uid="uid://bi5dq07val520" path="res://scenes/knight.tscn" id="10_ddxw6"]
 [ext_resource type="PackedScene" uid="uid://r532aoofsao4" path="res://scenes/cultist_boss.tscn" id="10_iw2mh"]
-[ext_resource type="PackedScene" uid="uid://d2nk3ts0bdqen" path="res://scenes/cutscene2.tscn" id="11_opw0y"]
+[ext_resource type="PackedScene" path="res://scenes/cutscene2.tscn" id="11_opw0y"]
 [ext_resource type="AudioStream" uid="uid://c1fufrfiphiif" path="res://Assets/BoxCat Games - Battle (Special).mp3" id="12_g7sqe"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
