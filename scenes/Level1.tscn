@@ -163,6 +163,7 @@ rotation = -0.243892
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_r7dij")
 autoplay = true
+stream_paused = true
 
 [node name="Bard2" parent="." instance=ExtResource("18_2ouud")]
 position = Vector2(1375, 265)
