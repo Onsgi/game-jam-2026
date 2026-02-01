@@ -10,10 +10,11 @@ func _ready() -> void:
 	add_to_group("icecube")
 	start_scale = scale
 
+	freeze_mode = RigidBody2D.FREEZE_MODE_KINEMATIC
+	freeze = true
 	# Ensure Area2D is monitoring
 	$Area2D.monitoring = true
 	$Area2D.monitorable = true
-
 	$Area2D.area_entered.connect(_on_area_entered)
 
 func _on_area_entered(area: Area2D) -> void:
@@ -29,14 +30,13 @@ func start_melting() -> void:
 
 	$CollisionShape2D.set_deferred("disabled", true)
 
-	# Wake rigid bodies touching this one
 	for body in $Area2D.get_overlapping_bodies():
 		if body is RigidBody2D:
 			body.sleeping = false
 
-	# Unfreeze the ice cube so it can fall while melting
-	freeze_mode = RigidBody2D.FREEZE_MODE_STATIC
+	# Allow gravity again
 	freeze = false
+
 
 func _process(delta: float) -> void:
 	if not melting:
