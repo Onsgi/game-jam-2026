@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2nk3ts0bdqen"]
+
+[ext_resource type="Script" uid="uid://8nrojxjreor1" path="res://scripts/cutscene2.gd" id="1_af4c7"]
+[ext_resource type="Texture2D" uid="uid://cwiouyfeasecx" path="res://Assets/background/protagonist meet.png" id="2_6neoj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fxw1"]
+size = Vector2(142, 27)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 15
+collision_mask = 15
+script = ExtResource("1_af4c7")
+
+[node name="CutsceneUI" type="CanvasLayer" parent="Area2D"]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="Area2D/CutsceneUI"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_6neoj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Area2D/CutsceneUI"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(17, -68)
+rotation = -1.33141
+shape = SubResource("RectangleShape2D_1fxw1")
