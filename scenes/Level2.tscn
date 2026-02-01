@@ -10,10 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://i4cmyxsbih01" path="res://scenes/torch.tscn" id="7_khw7m"]
 [ext_resource type="PackedScene" uid="uid://dc5hevhs047hl" path="res://scenes/checkpoint.tscn" id="8_ecr63"]
 [ext_resource type="PackedScene" uid="uid://dhs723vesyv5o" path="res://scenes/portal.tscn" id="9_portal"]
-[ext_resource type="PackedScene" uid="uid://12pwn2y47o2n" path="res://scenes/ice_cube.tscn" id="10_v8268"]
-[ext_resource type="PackedScene" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
-[ext_resource type="PackedScene" uid="uid://b18csmti1q1bv" path="res://scenes/bard3tscn.tscn" id="14_cd1f0"]
-[ext_resource type="PackedScene" uid="uid://c86eu0kdna7i0" path="res://scenes/bard4.tscn" id="14_k83s3"]
+[ext_resource type="PackedScene" path="res://scenes/ice_cube.tscn" id="10_v8268"]
+[ext_resource type="PackedScene" uid="uid://utmphpojwcyp" path="res://scenes/mask_trigger2.tscn" id="12_3aekd"]
+[ext_resource type="PackedScene" path="res://scenes/bard3tscn.tscn" id="14_cd1f0"]
+[ext_resource type="PackedScene" path="res://scenes/bard4.tscn" id="14_k83s3"]
 [ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="14_wd6ad"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
@@ -189,18 +189,23 @@ position = Vector2(816, 85)
 
 [node name="FireballShooter2" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(610, -12)
+collision_layer = 4
 
 [node name="FireballShooter" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(501, 102)
+collision_layer = 4
 
 [node name="FireballShooter3" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(1176, -154)
+collision_layer = 4
 
 [node name="FireballShooter4" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(775, -107)
+collision_layer = 4
 
 [node name="FireballShooter5" parent="Shooters" instance=ExtResource("1_rcugv")]
 position = Vector2(768, -218)
+collision_layer = 4
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_wd6ad")

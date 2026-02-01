@@ -42,7 +42,7 @@ func _shoot_fireball() -> void:
 	get_tree().current_scene.add_child(fb)
 
 
-func take_damage() -> void:
+func take_damage(_amount = 1) -> void:
 	if is_dead or invulnerable:
 		return
 	

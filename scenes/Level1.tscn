@@ -155,6 +155,7 @@ position = Vector2(0, 41)
 
 [node name="FireballShooter" parent="." instance=ExtResource("15_ipmer")]
 position = Vector2(1292, 230)
+collision_layer = 4
 
 [node name="Cutscene" parent="." instance=ExtResource("12_jxjwb")]
 position = Vector2(997, 182)
@@ -163,7 +164,6 @@ rotation = -0.243892
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_r7dij")
 autoplay = true
-stream_paused = true
 
 [node name="Bard2" parent="." instance=ExtResource("18_2ouud")]
 position = Vector2(1375, 265)

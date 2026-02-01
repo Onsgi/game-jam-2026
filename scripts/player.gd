@@ -154,7 +154,7 @@ func set_death():
 func get_death():
 	return is_dead
 
-func take_damage():
+func take_damage(_amount = 1):
 	Game_config.take_damage()
 	if Game_config.lives <= 0:
 		set_death()

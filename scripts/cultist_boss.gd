@@ -150,3 +150,11 @@ func die():
 	Game_config.add_soul(SOUL_REWARD)
 	await animated_sprite.animation_finished
 	queue_free()
+
+func _on_hurtbox_body_entered(body):
+	if body.is_in_group("player"):
+		# Using has_method check to be safe, though we know player has it
+		if body.has_method("get_is_dashing") and body.get_is_dashing():
+			take_damage(1)
+		else:
+			body.take_damage()
