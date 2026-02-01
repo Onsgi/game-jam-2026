@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://8p8rhijlqa4g"]
+[gd_scene load_steps=26 format=4 uid="uid://8p8rhijlqa4g"]
 
 [ext_resource type="PackedScene" uid="uid://bt5ggbfrc51g0" path="res://scenes/player.tscn" id="1_76388"]
 [ext_resource type="Script" uid="uid://cgu4k8f7fdhjg" path="res://scripts/player.gd" id="2_svatc"]
@@ -18,6 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://dgtqdnm0x4gy3" path="res://scenes/fireball_shooter.tscn" id="15_ipmer"]
 [ext_resource type="AudioStream" uid="uid://cmwpmpi3j56p" path="res://Assets/BoxCat Games - Assignment.mp3" id="17_r7dij"]
 [ext_resource type="PackedScene" uid="uid://bt7ghuu6rjx2n" path="res://scenes/bard2.tscn" id="18_2ouud"]
+[ext_resource type="Texture2D" uid="uid://bi2mygowbf4vt" path="res://Assets/background/Night Forest Parallax/Parallax/7.png" id="19_t46sy"]
+[ext_resource type="Texture2D" uid="uid://c631uxjd0wd4k" path="res://Assets/background/Night Forest Parallax/Parallax/5.png" id="20_thv4y"]
+[ext_resource type="Texture2D" uid="uid://c3r2b37dse6nr" path="res://Assets/background/Night Forest Parallax/Parallax/6.png" id="21_thv4y"]
+[ext_resource type="Texture2D" uid="uid://dlw5wcesijetm" path="res://Assets/background/Night Forest Parallax/Parallax/2.png" id="22_u4kti"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_muem4"]
 frequency = 0.0075
@@ -66,6 +70,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="MaskTrigger" parent="." instance=ExtResource("4_av1gt")]
 position = Vector2(1410.71, 198.612)
+scale = Vector2(0.914558, 1.02345)
 
 [node name="Player" parent="." instance=ExtResource("1_76388")]
 position = Vector2(-26, 60)
@@ -166,3 +171,77 @@ autoplay = true
 
 [node name="Bard2" parent="." instance=ExtResource("18_2ouud")]
 position = Vector2(1375, 265)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+z_index = -20
+texture_repeat = 2
+scroll_scale = Vector2(0.3, 0.9)
+repeat_size = Vector2(2, 0)
+repeat_times = 4
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+z_index = -10
+position = Vector2(600, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("19_t46sy")
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 100)
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+z_index = -10
+scroll_scale = Vector2(0.6, 1)
+repeat_size = Vector2(300, 0)
+repeat_times = 6
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+z_index = -10
+position = Vector2(600, 250)
+texture = ExtResource("20_thv4y")
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 600)
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+z_index = -5
+scroll_scale = Vector2(1, 0.9)
+repeat_size = Vector2(300, 0)
+repeat_times = 10
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(0, -20)
+texture = ExtResource("21_thv4y")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+texture_repeat = 1
+scale = Vector2(0.996483, 1.00477)
+scroll_scale = Vector2(0.5, 1)
+limit_begin = Vector2(0, -500)
+limit_end = Vector2(900, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+z_index = -10
+texture_repeat = 2
+position = Vector2(253.893, 16.9194)
+scale = Vector2(0.724274, 2.29637)
+texture = ExtResource("22_u4kti")
+region_enabled = true
+region_rect = Rect2(0, 0, 1600, 200)
+
+[node name="Parallax2D5" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.5, 1)
+limit_begin = Vector2(1000, 0)
+limit_end = Vector2(1500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+z_index = -10
+texture_repeat = 2
+position = Vector2(1200, 200)
+scale = Vector2(0.815618, 1.00792)
+texture = ExtResource("22_u4kti")
+region_enabled = true
+region_rect = Rect2(0, 0, 500, 200)
