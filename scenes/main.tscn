@@ -44,6 +44,7 @@ offset_left = -51.84
 offset_top = -25.892
 offset_right = 1238.16
 offset_bottom = 694.108
+pivot_offset = Vector2(1176.84, 810.892)
 texture = ExtResource("3_sugp2")
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
