@@ -98,11 +98,11 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_animated_sprite_2d_animation_finished():
-	if current_state == State.ATTACK:
+	if is_dead:
+		queue_free()
+	elif current_state == State.ATTACK:
 		attack_area.get_node("CollisionShape2D").disabled = true
 		current_state = State.CHASE
-	elif is_dead:
-		queue_free()
 
 func take_damage(amount):
 	if is_dead or invulnerable:
