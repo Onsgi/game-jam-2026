@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=19 format=3 uid="uid://c7qgwmt386soi"]
 
-[ext_resource type="Texture2D" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/world_tileset.png" id="1_5i7ek"]
+[ext_resource type="Texture2D" uid="uid://dvj7rvpm6ltuo" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/world_tileset.png" id="1_5i7ek"]
 [ext_resource type="Texture2D" uid="uid://k7paiatdeyv8" path="res://Assets/caves/mainlev_build.png" id="3_5i7ek"]
 [ext_resource type="Texture2D" uid="uid://bmdggdir2rb6y" path="res://Assets/Winter Forest Asset Kauzz/Enviroment.png" id="3_csr5i"]
 [ext_resource type="Texture2D" uid="uid://dpmdquh7vve1a" path="res://Assets/caves/props2.png" id="3_tcxlh"]
@@ -1867,13 +1867,13 @@ texture = ExtResource("3_csr5i")
 23:6/0 = 0
 24:6/0 = 0
 0:7/0 = 0
-0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.95689, -2.33816, 8, -8, 8, 1.43887, 2.51802, 6.1152, -8, 8)
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.23746, -3.41732, 8, -5.2159, 8, 8, -8, 8)
 1:7/0 = 0
-1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 5.39576, -8, 2.69788)
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 8, -5.2159, 8, 8, -8, 8)
 4:7/0 = 0
-4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 5.75548, -8, 3.41732)
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 8, -5.2159, 8, 8, -8, 8)
 5:7/0 = 0
-5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.2159, -3.23746, 8, 8, -8, 2.51802)
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 5.03605, -3.23746, 8, 8, -8, 8)
 6:7/0 = 0
 7:7/0 = 0
 8:7/0 = 0
@@ -1924,7 +1924,7 @@ texture = ExtResource("3_csr5i")
 1:9/0 = 0
 1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.719435, 0.899294, 8, -5.39576, 8, -5.2159, 8, 8, -8, 8)
 2:9/0 = 0
-2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 8, -5.39576, 8, -8, 8, 8, -8, 8)
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 8, -5.2159, 8, 8, -8, 8)
 3:9/0 = 0
 3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.2159, 8, -5.39576, 8, -8, 8, 8, -8, 8)
 4:9/0 = 0

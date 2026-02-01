@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://c81fkr1emjbi5"]
+[gd_scene load_steps=48 format=3 uid="uid://bi5dq07val520"]
 
 [ext_resource type="Script" uid="uid://b1lvas548cyy8" path="res://scripts/knight.gd" id="1_knight"]
 [ext_resource type="Texture2D" uid="uid://r4cxyg1osvas" path="res://Assets/NightBorne.png" id="2_sprite"]

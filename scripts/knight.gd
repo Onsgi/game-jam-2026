@@ -96,6 +96,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+
 func _on_animated_sprite_2d_animation_finished():
 	if current_state == State.ATTACK:
 		attack_area.get_node("CollisionShape2D").disabled = true

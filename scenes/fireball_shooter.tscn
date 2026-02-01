@@ -1,38 +1,37 @@
-[gd_scene load_steps=12 format=3 uid="uid://dgtqdnm0x4gy3"]
+[gd_scene load_steps=11 format=3 uid="uid://dgtqdnm0x4gy3"]
 
 [ext_resource type="Script" uid="uid://dgfbedp345ktq" path="res://scripts/fireball_shooter.gd" id="1_7ubwt"]
-[ext_resource type="Texture2D" uid="uid://b7jh3omto3ycp" path="res://Assets/cultist_plague_doctor.png" id="2_7ubwt"]
+[ext_resource type="Texture2D" uid="uid://cwgsqx3s6xgxw" path="res://Assets/brackeys Basic Enemies/brackeys_platformer_assets/sprites/cultist_plague_doctor.png" id="2_7ubwt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iu8yy"]
 size = Vector2(13, 20)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mrgm4"]
-atlas = ExtResource("2_7ubwt")
-region = Rect2(0, 128, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kpev1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ubwt"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(32, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bbq5g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrgm4"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(64, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bbj16"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpev1"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(96, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_01srj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbq5g"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(128, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yggfg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbj16"]
 atlas = ExtResource("2_7ubwt")
 region = Rect2(160, 128, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lakpn"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ubwt")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mrgm4")
 }, {
@@ -44,12 +43,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bbj16")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_01srj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yggfg")
 }],
 "loop": true,
 "name": &"default",
@@ -77,6 +70,7 @@ shape = SubResource("RectangleShape2D_iu8yy")
 position = Vector2(-0.25, -1)
 scale = Vector2(0.765625, 0.75)
 sprite_frames = SubResource("SpriteFrames_lakpn")
+autoplay = "default"
 
 [node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 3
