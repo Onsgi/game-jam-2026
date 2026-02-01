@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8w6vgx1o8ing"]
+[gd_scene load_steps=6 format=3 uid="uid://b8w6vgx1o8ing"]
 
 [ext_resource type="Script" uid="uid://baayf0p2fww3u" path="res://scripts/control.gd" id="1_o6xl0"]
 [ext_resource type="Script" uid="uid://bfea1tn5gv84r" path="res://scripts/playbutton.gd" id="2_0wfyh"]
+[ext_resource type="FontFile" uid="uid://leylpyijm14r" path="res://Assets/Gothic_pixel_font(0S).ttf" id="2_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://csf5qh54jkdqw" path="res://Assets/mainmenu.png" id="3_sugp2"]
 [ext_resource type="AudioStream" uid="uid://cuo1wkpoja6qa" path="res://Assets/mainmenu music.mp3" id="4_jyhfs"]
 
@@ -30,11 +31,12 @@ top_level = true
 light_mask = 2
 visibility_layer = 2
 layout_mode = 0
-offset_left = 172.0
-offset_top = 237.0
-offset_right = 550.0
-offset_bottom = 494.0
-text = "Level 1
+offset_left = 451.0
+offset_top = 404.0
+offset_right = 829.0
+offset_bottom = 661.0
+theme_override_fonts/font = ExtResource("2_tbgi4")
+text = "Start game
 "
 script = ExtResource("2_0wfyh")
 
@@ -46,6 +48,16 @@ offset_right = 1238.16
 offset_bottom = 694.108
 pivot_offset = Vector2(1176.84, 810.892)
 texture = ExtResource("3_sugp2")
+
+[node name="Label" type="Label" parent="MenuRoot/MainMenu"]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 136.0
+offset_right = 855.0
+offset_bottom = 212.0
+theme_override_fonts/font = ExtResource("2_tbgi4")
+theme_override_font_sizes/font_size = 32
+text = "Cult of the Mask"
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_jyhfs")
