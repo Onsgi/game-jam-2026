@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2nk3ts0bdqen"]
+[gd_scene load_steps=5 format=3 uid="uid://d2nk3ts0bdqen"]
 
 [ext_resource type="Script" uid="uid://8nrojxjreor1" path="res://scripts/cutscene2.gd" id="1_af4c7"]
 [ext_resource type="Texture2D" uid="uid://cwiouyfeasecx" path="res://Assets/background/protagonist meet.png" id="2_6neoj"]
+[ext_resource type="FontFile" uid="uid://leylpyijm14r" path="res://Assets/Gothic_pixel_font(0S).ttf" id="3_6neoj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fxw1"]
 size = Vector2(142, 27)
@@ -34,6 +35,7 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_6neoj")
 theme_override_font_sizes/font_size = 32
 metadata/_edit_use_anchors_ = true
 

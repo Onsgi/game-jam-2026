@@ -4,7 +4,7 @@ extends Area2D
 @onready var enemy_image := cutscene_ui.get_node("TextureRect")
 @onready var text_label := cutscene_ui.get_node("Label")
 
-var cutscene_text := "Hello...                                     \n Prepare to die"
+var cutscene_text := "Hello...         \n Prepare to die"
 var text_speed := 0.04
 var cutscene_duration := 5.0
 var cutscene_played := false

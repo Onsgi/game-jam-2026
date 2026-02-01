@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtbjp50ehmj3i"]
+[gd_scene load_steps=5 format=3 uid="uid://dtbjp50ehmj3i"]
 
 [ext_resource type="Script" uid="uid://ouv7clw47epq" path="res://scripts/cutscene1.gd" id="1_aqdjm"]
 [ext_resource type="Texture2D" uid="uid://tmtt7ffv84s0" path="res://Assets/background/background cutscene.png" id="2_aqdjm"]
+[ext_resource type="FontFile" uid="uid://leylpyijm14r" path="res://Assets/Gothic_pixel_font(0S).ttf" id="3_pyd2y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fxw1"]
 size = Vector2(142, 27)
@@ -34,6 +35,7 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_pyd2y")
 theme_override_font_sizes/font_size = 32
 metadata/_edit_use_anchors_ = true
 
